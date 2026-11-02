@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contact Way2Care for product questions, partnerships and thoughtful conversations about care." />
+  <title>Contact Us | Way2Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body class="inner-v6 contact-v6">
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
+  <aside class="announcement-bar" aria-label="Brand message">
+    <div class="announcement-bar__inner"><span>♥ &nbsp;Thoughtful care</span><i></i><span>Inspired by
+        nature</span><i></i><span>Made for every you &nbsp;♥</span></div><button class="announcement-bar__close"
+      type="button" aria-label="Close announcement">×</button>
+  </aside>
+  <header class="site-header" data-header>
+    <div class="shell header-inner bliss-nav reference-nav">
+      <nav class="desktop-nav nav-left" aria-label="Primary navigation"><a href="shop-all.html">Shop all</a><a
+          href="combo-packs.html">Combo packs</a><a href="shop.html">Products</a><a href="about.html">About us</a><a
+          class="is-active" href="contact.html">Contacts</a></nav><a class="brand brand-centered" href="index.html"
+        aria-label="Way2Care home"><img src="assets/logos/ChatGPT Image Sep 19, 2026, 05_06_24 PM.png"
+          alt="Way2Care" /></a>
+      <div class="nav-right-wrap"><a class="header-shop" href="#message">Talk to us <span>→</span></a><button
+          class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Open menu"><span></span><span></span><span></span></button></div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true"><a href="shop-all.html">Shop all</a><a
+        href="combo-packs.html">Combo packs</a><a href="shop.html">Products</a><a href="about.html">About us</a><a
+        href="contact.html">Contacts</a></nav>
+  </header>
+  <main>
+    <section class="contact-hero page-image-hero contact-image-hero">
+      <img class="page-image-hero__image" src="assets/images/contact_hero_banner.png"
+        alt="Three generations sharing a warm family moment" fetchpriority="high" />
+      <div class="contact-hero__copy" data-reveal><span>Contact Way2Care</span>
+        <h1>Let&rsquo;s talk<br><em>about care.</em></h1>
+        <p>Questions, ideas or something you would like to share&mdash;every thoughtful conversation begins with a
+          little care.</p><a class="button button-pink" href="#message">Start a conversation <span>&darr;</span></a>
+      </div>
+    </section>
+    <section class="section contact-page" id="message">
+      <div class="shell contact-page-grid">
+        <div class="contact-page-intro" data-reveal><span class="eyebrow">We are listening</span>
+          <h2>However you want to<br><em>start the conversation.</em></h2>
+          <p>Use the form for product information, brand questions, partnerships or anything else you would like us to
+            know.</p>
+          <div class="contact-method"><b>01</b>
+            <div><strong>Email us</strong><a href="mailto:care@way2care.in">care@way2care.in</a></div>
+          </div>
+          <div class="contact-method"><b>02</b>
+            <div><strong>Call or WhatsApp</strong><a href="tel:+919876543210">+91 98765 43210</a><a
+                class="contact-whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener">Open WhatsApp
+                →</a></div>
+          </div>
+          <div class="contact-method"><b>03</b>
+            <div><strong>Visit our studio</strong><span>Bengaluru, Karnataka, India</span></div>
+          </div>
+        </div>
+        <form id="contact-form" class="message-card large-form contact-form-card" novalidate>
+          <header class="contact-form-card__header"><span>01</span>
+            <div><small>Send a message</small>
+              <h3>Tell us what&rsquo;s on your mind.</h3>
+              <p>Your answers prepare a clear WhatsApp message for our care team.</p>
+            </div>
+          </header>
+          <div class="contact-form-card__section-title"><span>About you</span><small>Required fields are marked
+              *</small>
+          </div>
+          <div class="field-row"><label>YOUR NAME *<input id="contact-name" class="contact-form__input" type="text"
+                name="name" placeholder="Your full name" autocomplete="name" required /><span
+                class="contact-form__error"></span></label><label>MOBILE NUMBER *<input id="contact-phone"
+                class="contact-form__input" type="tel" name="phone" inputmode="numeric" pattern="[0-9]{10}"
+                maxlength="10" placeholder="10-digit mobile number" autocomplete="tel" required /><span
+                class="contact-form__error"></span></label></div>
+          <label>EMAIL ADDRESS *<input id="contact-email" class="contact-form__input" type="email" name="email"
+              placeholder="you@example.com" autocomplete="email" required /><span
+              class="contact-form__error"></span></label>
+          <div class="contact-form-card__section-title"><span>Your enquiry</span><small>Choose the closest topic</small>
+          </div>
+          <label>WHAT WOULD YOU LIKE TO TALK ABOUT?<select id="contact-subject" name="topic">
+              <option value="Product enquiry">Product enquiry</option>
+              <option value="Partnership">Partnership or collaboration</option>
+              <option value="Brand question">Brand question</option>
+              <option value="Something else">Something else</option>
+            </select></label>
+          <label>YOUR MESSAGE *<textarea id="contact-message" class="contact-form__textarea" name="message"
+              placeholder="Tell us how we can help..." required></textarea><span
+              class="contact-form__error"></span></label>
+          <div class="contact-form-card__submit">
+            <p><span aria-hidden="true">&#10022;</span> Your details are only used
+              to prepare this enquiry.</p><button class="button button-pink" type="submit">Continue on WhatsApp
+              <span>&rarr;</span></button>
+          </div>
+        </form>
+        <div id="form-success" class="form-success"><span>&#10003;</span>
+          <h3>WhatsApp is ready.</h3>
+          <p>Please
+            send the prefilled message in WhatsApp to submit your enquiry. Opening WhatsApp alone does not send it.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-topics">
+      <div class="shell">
+        <div class="section-heading">
+          <h2>There are many ways<br><em>we can connect.</em></h2>
+        </div>
+        <div class="standard-grid" data-stagger>
+          <article><b>01</b>
+            <h3>Product questions.</h3>
+            <p>Learn more about our care ranges, materials and everyday use.</p>
+          </article>
+          <article><b>02</b>
+            <h3>Partnerships.</h3>
+            <p>Explore retail, community and thoughtful brand collaborations.</p>
+          </article>
+          <article><b>03</b>
+            <h3>Press &amp; stories.</h3>
+            <p>Talk to us about editorial features, interviews and brand assets.</p>
+          </article>
+          <article><b>04</b>
+            <h3>Just say hello.</h3>
+            <p>Share an idea, a care story or something you think we should hear.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="brand-cta">
+      <div class="shell" data-reveal><span>A little closer to nature</span>
+        <h2>A little kinder <em>to you.</em></h2>
+        <p>Discover the thinking and values behind our approach to care.</p><a class="button button-pink"
+          href="about.html">About Way2Care <span>→</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer final-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logos/ChatGPT Image Sep 19, 2026, 05_06_24 PM.png" alt="Way2Care" />
+        <p>A little inspiration for your everyday. New launches, honest guidance and thoughtful care from the Way2Care
+          community.</p>
+      </div>
+      <div>
+        <h4>Explore</h4><a href="index.html">Home</a><a href="shop.html">Products</a><a href="about.html">About</a><a
+          href="contact.html">Contact us</a>
+      </div>
+      <div>
+        <h4>Our care</h4><a href="shop.html#period-care">Period care</a><a href="shop.html#daily-care">Daily
+          essentials</a><a href="shop.html#care-rituals">Care rituals</a><a href="about.html">Our approach</a>
+      </div>
+      <div>
+        <h4>Connect</h4><a href="contact.html">Product enquiries</a><a href="contact.html">Partnerships</a><a
+          href="contact.html">General questions</a><a href="contact.html">Write to us</a>
+      </div>
+      <div class="footer-note">
+        <h3>A little care.<br><em>Straight to you.</em></h3>
+        <p>News and little rituals from the Way2Care community.</p>
+        <form onsubmit="event.preventDefault(); this.reset();"><input type="email" placeholder="Your email address"
+            aria-label="Newsletter email" required /><button aria-label="Subscribe">→</button></form>
+      </div>
+    </div>
+    <div class="footer-values"><span>♧ Nature inspired</span><span>✦ Thoughtfully made</span><span>♡ Everyday
+        comfort</span><span>◯ Open conversations</span><span>▧ Intimate wellness</span></div>
+    <div class="shell footer-bottom">
+      <p>© 2026 Way2Care. All rights reserved.</p>
+      <nav><a href="index.html">Home</a><a href="shop.html">Products</a><a href="about.html">About</a><a
+          href="contact.html">Contact</a></nav>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
