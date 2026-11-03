@@ -140,6 +140,7 @@ const WAY2CARE_PRODUCTS = {
   'xl-ultra-thin-herbal-pads': {
     name: 'XL Ultra Thin Herbal Sanitary Pads', category: 'Period care', price: 220,
     description: 'Slim 280 mm protection for light-to-medium flow with a comfortable dry feel.',
+    hoverImage: 'assets/images/xxl_ultra_thin_Product_detail_.png',
     images: ['assets/images/produst__sanitary_napkin_4.png'],
     storyImage: 'assets/images/Warm Minimalist Period Care Moment.png',
     benefits: [['Ultra-thin profile', 'A slimmer pad format for an easy everyday routine.'], ['280 mm coverage', 'An XL format for lighter and medium-flow moments.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Direct support', 'Ask the care team any product questions before ordering.']],
@@ -363,7 +364,13 @@ function initProductDetail() {
   page.querySelector('[data-qty-inc]').addEventListener('click', () => setTimeout(syncButtons));
   syncButtons();
 
-  page.querySelector('[data-pdp-benefits]').innerHTML = product.benefits.map((benefit, index) => `<article><span>0${index + 1}</span><i aria-hidden="true">${['◇', '○', '✦', '♡'][index]}</i><h3>${benefit[0]}</h3><p>${benefit[1]}</p></article>`).join('');
+  const benefitIcons = [
+    '<svg viewBox="0 0 24 24"><path d="M12 3C9 7 6 10 6 14a6 6 0 0 0 12 0c0-4-3-7-6-11Z"></path><path d="M9 15c.5 1.5 1.5 2 3 2"></path></svg>',
+    '<svg viewBox="0 0 24 24"><path d="M5 7h11"></path><path d="m13 4 3 3-3 3"></path><path d="M19 17H8"></path><path d="m11 14-3 3 3 3"></path></svg>',
+    '<svg viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></svg>',
+    '<svg viewBox="0 0 24 24"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="m5.6 5.6 2.8 2.8"></path><path d="m15.6 15.6 2.8 2.8"></path><path d="m18.4 5.6-2.8 2.8"></path><path d="m8.4 15.6-2.8 2.8"></path><circle cx="12" cy="12" r="3"></circle></svg>'
+  ];
+  page.querySelector('[data-pdp-benefits]').innerHTML = product.benefits.map((benefit, index) => `<article><span>0${index + 1}</span><i class="pdp-benefit-icon" aria-hidden="true">${benefitIcons[index]}</i><h3>${benefit[0]}</h3><p>${benefit[1]}</p></article>`).join('');
   page.querySelector('[data-pdp-story-image]').src = product.storyImage;
   page.querySelector('[data-pdp-story-image]').alt = `${product.name} in a Way2Care setting`;
   page.querySelector('[data-pdp-facts]').innerHTML = product.facts.map((fact) => `<div><small>${fact[0]}</small><strong>${fact[1]}</strong></div>`).join('');
@@ -504,6 +511,15 @@ function initCart() {
   const nav = document.querySelector('.nav-right-wrap');
   if (!nav) return;
 
+  const talkIcon = nav.querySelector('.header-shop span');
+  if (talkIcon) {
+    talkIcon.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 12h14"></path>
+        <path d="m14 7 5 5-5 5"></path>
+      </svg>`;
+  }
+
   const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (character) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
   })[character]);
@@ -524,7 +540,13 @@ function initCart() {
   cartButton.className = 'header-cart-button';
   cartButton.type = 'button';
   cartButton.setAttribute('aria-label', 'Open shopping cart');
-  cartButton.innerHTML = 'Cart <span data-site-cart-count>0</span>';
+  cartButton.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M3.5 4.5h2l1.7 9.1a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.5l1.2-5.2H6.3"></path>
+      <circle cx="9.5" cy="19" r="1.25"></circle>
+      <circle cx="17.5" cy="19" r="1.25"></circle>
+    </svg>
+    <span data-site-cart-count>0</span>`;
   nav.insertBefore(cartButton, nav.querySelector('.menu-toggle'));
 
   const cartRoot = document.createElement('div');
