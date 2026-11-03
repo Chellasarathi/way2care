@@ -9642,6 +9642,393 @@ body.shop-all-v6 .catalogue-grid>article.shop-card .shop-card__actions button {
   font-size: 12px !important;
 }
 
+/* ========================================================================== */
+/* Finished contact, connection and human-values presentation                  */
+/* ========================================================================== */
+
+body.home-v6 .contact-home {
+  margin: 22px clamp(10px, 2vw, 30px) !important;
+  padding: clamp(48px, 6vw, 86px) clamp(18px, 4vw, 58px) !important;
+  background: #ecebe9 !important;
+}
+
+body.home-v6 .contact-home .contact-grid {
+  grid-template-columns: minmax(0, .9fr) minmax(440px, 1.1fr) !important;
+  gap: clamp(42px, 6vw, 82px) !important;
+  width: min(1180px, 100%) !important;
+  max-width: 1180px !important;
+  padding: clamp(38px, 4.5vw, 66px) !important;
+  align-items: stretch !important;
+  border: 1px solid rgba(18, 52, 47, .07) !important;
+  border-radius: 30px !important;
+  background: #fff !important;
+  box-shadow: 0 22px 54px rgba(32, 51, 46, .08) !important;
+}
+
+body.home-v6 .contact-intro {
+  display: flex !important;
+  min-width: 0 !important;
+  padding: 10px 0 !important;
+  flex-direction: column !important;
+}
+
+body.home-v6 .contact-intro__eyebrow {
+  margin-bottom: 16px !important;
+  color: #078f7d !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: .13em !important;
+  text-transform: uppercase !important;
+}
+
+body.home-v6 .contact-intro h2 {
+  margin: 0 0 20px !important;
+  color: #17352f !important;
+  font-size: clamp(43px, 4.5vw, 64px) !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+}
+
+body.home-v6 .contact-intro h2 em {
+  color: #08bfa7 !important;
+}
+
+body.home-v6 .contact-intro>p {
+  max-width: 470px !important;
+  margin: 0 0 34px !important;
+  color: #5b6e69 !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+body.home-v6 .contact-intro__methods {
+  display: grid !important;
+  gap: 8px !important;
+  margin: auto 0 0 !important;
+  padding: 0 !important;
+}
+
+body.home-v6 .contact-intro__methods li {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  margin: 0 !important;
+  padding: 14px 0 !important;
+  align-items: center !important;
+  border-top: 1px solid #e5e7e4 !important;
+}
+
+body.home-v6 .contact-intro__methods li:last-child {
+  border-bottom: 1px solid #e5e7e4 !important;
+}
+
+body.home-v6 .contact-intro__methods li>b {
+  display: grid !important;
+  width: 42px !important;
+  height: 42px !important;
+  margin: 0 !important;
+  place-items: center !important;
+  border-radius: 13px !important;
+  background: #e5f6f1 !important;
+  color: #078f7d !important;
+}
+
+body.home-v6 .contact-intro__methods svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.7 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+body.home-v6 .contact-intro__methods li span {
+  display: flex !important;
+  min-width: 0 !important;
+  flex-direction: column !important;
+  gap: 3px !important;
+}
+
+body.home-v6 .contact-intro__methods strong {
+  color: #17352f !important;
+  font-size: 14px !important;
+}
+
+body.home-v6 .contact-intro__methods a,
+body.home-v6 .contact-intro__methods small {
+  color: #60726d !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  text-decoration: none !important;
+}
+
+body.home-v6 .contact-home .message-card {
+  margin: 0 !important;
+  padding: clamp(28px, 3.2vw, 42px) !important;
+  border: 1px solid #e4e5e2 !important;
+  border-radius: 24px !important;
+  background: #f3f3f1 !important;
+  box-shadow: none !important;
+}
+
+body.home-v6 .message-card__heading {
+  margin-bottom: 25px !important;
+}
+
+body.home-v6 .message-card__heading h3 {
+  margin: 0 0 6px !important;
+  color: #17352f !important;
+  font: 700 clamp(29px, 2.7vw, 38px)/1.05 var(--display), 'Playfair Display', serif !important;
+  letter-spacing: -.025em !important;
+}
+
+body.home-v6 .message-card__heading p {
+  margin: 0 !important;
+  color: #647570 !important;
+  font-size: 15px !important;
+}
+
+body.home-v6 .contact-home .message-card label {
+  margin-bottom: 17px !important;
+  color: #29443e !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  letter-spacing: .08em !important;
+}
+
+body.home-v6 .contact-home .field-row {
+  gap: 14px !important;
+}
+
+body.home-v6 .contact-home .message-card input,
+body.home-v6 .contact-home .message-card select,
+body.home-v6 .contact-home .message-card textarea {
+  width: 100% !important;
+  margin-top: 8px !important;
+  padding: 0 16px !important;
+  border: 1px solid #d9ddd9 !important;
+  border-radius: 11px !important;
+  background: #fff !important;
+  color: #17352f !important;
+  font-size: 15px !important;
+  letter-spacing: 0 !important;
+  transition: border-color .2s ease, box-shadow .2s ease !important;
+}
+
+body.home-v6 .contact-home .message-card input,
+body.home-v6 .contact-home .message-card select {
+  min-height: 54px !important;
+}
+
+body.home-v6 .contact-home .message-card textarea {
+  min-height: 128px !important;
+  padding-block: 15px !important;
+}
+
+body.home-v6 .contact-home .message-card input:focus,
+body.home-v6 .contact-home .message-card select:focus,
+body.home-v6 .contact-home .message-card textarea:focus {
+  border-color: #08bfa7 !important;
+  box-shadow: 0 0 0 4px rgba(8, 191, 167, .1) !important;
+}
+
+body.home-v6 .contact-home .message-card .button {
+  min-width: 210px !important;
+  min-height: 50px !important;
+  height: 50px !important;
+  margin-top: 4px !important;
+  justify-content: center !important;
+}
+
+body.contact-v6 .contact-topics {
+  margin: 20px !important;
+  padding: clamp(68px, 7vw, 98px) 0 !important;
+  border: 1px solid rgba(18, 52, 47, .07) !important;
+  border-radius: 30px !important;
+  background: #f5f8f6 !important;
+}
+
+body.contact-v6 .contact-topics .shell {
+  width: min(1180px, calc(100% - 48px)) !important;
+  max-width: 1180px !important;
+}
+
+body.contact-v6 .contact-topics .section-heading {
+  display: flex !important;
+  margin-bottom: 34px !important;
+  align-items: end !important;
+  justify-content: space-between !important;
+  gap: 32px !important;
+}
+
+body.contact-v6 .contact-topics .section-heading h2 {
+  max-width: 650px !important;
+  margin: 0 !important;
+  color: #17352f !important;
+  font-size: clamp(42px, 4.6vw, 64px) !important;
+  line-height: .98 !important;
+}
+
+body.contact-v6 .contact-topics .section-heading>p {
+  max-width: 330px !important;
+  margin: 0 0 5px !important;
+  color: #60726d !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  border: 0 !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid article {
+  display: flex !important;
+  min-height: 255px !important;
+  padding: 28px !important;
+  flex-direction: column !important;
+  border: 1px solid rgba(18, 52, 47, .09) !important;
+  border-radius: 22px !important;
+  background: #fff !important;
+  box-shadow: 0 12px 28px rgba(18, 52, 47, .05) !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid article:nth-child(2),
+body.contact-v6 .contact-topics .standard-grid article:nth-child(4) {
+  background: #fff7fa !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid article b {
+  display: grid !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: 0 0 34px !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+  background: #e4f7f2 !important;
+  color: #078f7d !important;
+  font: 700 12px/1 var(--body), 'DM Sans', sans-serif !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid article h3 {
+  margin: 0 0 11px !important;
+  color: #17352f !important;
+  font-size: 24px !important;
+  line-height: 1.15 !important;
+}
+
+body.contact-v6 .contact-topics .standard-grid article p {
+  margin: 0 !important;
+  color: #536963 !important;
+  font-size: 16px !important;
+  line-height: 1.62 !important;
+}
+
+body.about-v6 .human-values {
+  margin: 20px !important;
+  padding: clamp(68px, 7vw, 98px) 0 !important;
+  border: 1px solid rgba(18, 52, 47, .07) !important;
+  border-radius: 30px !important;
+  background: #f7faf8 !important;
+  overflow: hidden !important;
+}
+
+body.about-v6 .human-values::after,
+body.about-v6 .human-values::before {
+  content: none !important;
+  display: none !important;
+}
+
+body.about-v6 .human-values .shell {
+  width: min(1180px, calc(100% - 48px)) !important;
+  max-width: 1180px !important;
+}
+
+body.about-v6 .human-values .section-top {
+  display: flex !important;
+  margin-bottom: 34px !important;
+  align-items: end !important;
+  justify-content: space-between !important;
+  gap: 30px !important;
+}
+
+body.about-v6 .human-values .section-top h2 {
+  margin: 0 !important;
+  color: #17352f !important;
+  font-size: clamp(42px, 4.5vw, 62px) !important;
+  line-height: 1 !important;
+  letter-spacing: -.04em !important;
+}
+
+body.about-v6 .human-values .section-top>p {
+  max-width: 330px !important;
+  margin: 0 0 4px !important;
+  color: #60726d !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+body.about-v6 .human-values .standard-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  border: 0 !important;
+}
+
+body.about-v6 .human-values .standard-grid article {
+  display: flex !important;
+  min-height: 245px !important;
+  padding: 30px !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  border: 1px solid rgba(18, 52, 47, .08) !important;
+  border-radius: 22px !important;
+  background: #e6f6f1 !important;
+  box-shadow: 0 12px 28px rgba(18, 52, 47, .05) !important;
+}
+
+body.about-v6 .human-values .standard-grid article:nth-child(even) {
+  background: #fff0f5 !important;
+}
+
+body.about-v6 .human-values .standard-grid article h3 {
+  margin: 0 0 14px !important;
+  color: #17352f !important;
+  font-size: clamp(25px, 2vw, 30px) !important;
+  line-height: 1.08 !important;
+}
+
+body.about-v6 .human-values .standard-grid article p {
+  margin: 0 !important;
+  color: #425d56 !important;
+  font-size: 16px !important;
+  line-height: 1.62 !important;
+}
+
+/* Readable body copy throughout the active site. */
+body[class].home-v6 main p,
+body[class].inner-v6 main p {
+  font-size: clamp(15.5px, 1.05vw, 17px) !important;
+  line-height: 1.66 !important;
+}
+
+/* Every visible price uses the body typeface, never the display serif. */
+.commerce-price,
+.commerce-price strong,
+.pdp-price,
+.pdp-price strong,
+[data-pdp-price],
+[data-pdp-sticky-price],
+[data-cart-total],
+.commerce-cart-item p,
+.product-card__price,
+.product-info__price,
+.product-info__price-original {
+  font-family: var(--body), 'DM Sans', Arial, sans-serif !important;
+  font-variant-numeric: tabular-nums !important;
+}
+
 @media (max-width: 700px) {
 
   body.home-v6 main p,

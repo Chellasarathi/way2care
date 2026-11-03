@@ -115,8 +115,8 @@
         <p>We imagine menstrual care around you — your changing routines,<br>your individual preferences and every phase
           of your cycle.</p>
       </div>
-      <img src="assets/images/Generational Family Bond in Pastels.png"
-        alt="Three generations sharing a warm moment together" loading="lazy" />
+      <img src="assets/images/generational-bond.png" alt="Three generations sharing a warm moment together"
+        loading="lazy" />
     </section>
 
     <section class="section bestsellers" aria-labelledby="bestsellers-title">
@@ -233,8 +233,8 @@
         </p>
         <a class="button button-pink" href="shop.html">Find your care essentials <span>→</span></a>
       </div>
-      <img src="assets/images/Serene Pastel Self-Care Lounge.png"
-        alt="Woman packing her Way2Care essentials for the day" loading="lazy" />
+      <img src="assets/images/serene-self-care-lounge.png" alt="Woman packing her Way2Care essentials for the day"
+        loading="lazy" />
     </section>
 
     <section class="section campaign" hidden>
@@ -263,33 +263,28 @@
       </div>
     </section>
 
-    <section class="section contact-home" aria-labelledby="contact-title">
+    <section class="section contact-home" id="home-support" aria-labelledby="contact-title">
       <div class="shell contact-grid">
         <div class="contact-intro" data-reveal>
-          <h2 id="contact-title">Let’s talk<br><em>about care.</em></h2>
-          <p>Have a question about Way2Care or an idea to share? Every good conversation starts with a little care.</p>
-          <ul>
-            <li><b>+</b><span><strong>Product enquiries</strong><small>Find out more about the products and
-                  collections.</small></span></li>
-            <li><b>+</b><span><strong>Partnerships &amp; collaborations</strong><small>Let’s explore thoughtful
-                  possibilities together.</small></span></li>
+          <span class="contact-intro__eyebrow">We are here to help</span>
+          <h2 id="contact-title">Talk to our<br><em>support team.</em></h2>
+          <p>Reach out for product guidance, order support or anything you would like to know about Way2Care.</p>
+          <ul class="contact-intro__methods">
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg></b><span><strong>Email us</strong><a href="mailto:care@way2care.in">care@way2care.in</a></span></li>
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11zM12 12a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" /></svg></b><span><strong>Visit our studio</strong><small>Bengaluru, Karnataka, India</small></span></li>
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3l3 4-2 2c1.5 3 3.5 5 6.5 6.5l2-2 4 3c-.8 3-2.5 4.5-5 4.5C9.2 20.3 3.7 14.8 3 8.5 3 6 4.5 3.8 7 3z" /></svg></b><span><strong>Call or WhatsApp</strong><a href="tel:+919876543210">+91 98765 43210</a></span></li>
           </ul>
-          <small>Good conversation starts with one small step.</small>
         </div>
         <form class="message-card"
           onsubmit="event.preventDefault(); alert('Thank you — your message has been sent.'); this.reset();">
-          <h3>Send a message</h3>
-          <p>We’d love to hear from you.</p>
+          <div class="message-card__heading"><span class="message-card__kicker">Quick enquiry</span><h3>Send a message</h3><p>Tell us how we can help.</p></div>
           <div class="field-row"><label>NAME *<input type="text" name="name" placeholder="Your full name"
                 required /></label><label>EMAIL *<input type="email" name="email" placeholder="you@example.com"
                 required /></label></div>
-          <label>I’M INTERESTED IN<select name="topic">
-              <option>Product information</option>
-              <option>Partnership</option>
-              <option>General question</option>
-            </select></label>
+          <label>PHONE NUMBER<input type="tel" name="phone" inputmode="numeric" placeholder="Your phone number" /></label>
           <label>MESSAGE *<textarea name="message" placeholder="How can we help?" required></textarea></label>
-          <button class="button button-pink" type="submit">Send your enquiry <span>→</span></button>
+          <button class="button button-pink" type="submit">Send message <span>→</span></button>
+          <p class="message-card__note"><span aria-hidden="true">✓</span> Your details stay private and are only used to respond to your enquiry.</p>
         </form>
       </div>
     </section>
