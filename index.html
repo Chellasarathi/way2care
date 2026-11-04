@@ -48,7 +48,7 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-bg desktop-hero-image" src="assets/images/hero-banner.png"
+      <img class="hero-bg desktop-hero-image" src="assets/images/index-hero-banner.png"
         alt="Way2Care everyday and daily care packs surrounded by soft natural botanicals" fetchpriority="high" />
       <img class="hero-bg mobile-hero-image" src="assets/images/index-mobile-hero-banner.png"
         alt="Way2Care care essentials with two women in a calm everyday setting" />
@@ -270,21 +270,36 @@
           <h2 id="contact-title">Talk to our<br><em>support team.</em></h2>
           <p>Reach out for product guidance, order support or anything you would like to know about Way2Care.</p>
           <ul class="contact-intro__methods">
-            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg></b><span><strong>Email us</strong><a href="mailto:care@way2care.in">care@way2care.in</a></span></li>
-            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11zM12 12a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" /></svg></b><span><strong>Visit our studio</strong><small>Bengaluru, Karnataka, India</small></span></li>
-            <li><b aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3l3 4-2 2c1.5 3 3.5 5 6.5 6.5l2-2 4 3c-.8 3-2.5 4.5-5 4.5C9.2 20.3 3.7 14.8 3 8.5 3 6 4.5 3.8 7 3z" /></svg></b><span><strong>Call or WhatsApp</strong><a href="tel:+919876543210">+91 98765 43210</a></span></li>
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24">
+                  <path d="M4 6h16v12H4zM4 7l8 6 8-6" />
+                </svg></b><span><strong>Email us</strong><a href="mailto:care@way2care.in">care@way2care.in</a></span>
+            </li>
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11zM12 12a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" />
+                </svg></b><span><strong>Visit our studio</strong><small>Bengaluru, Karnataka, India</small></span></li>
+            <li><b aria-hidden="true"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 3l3 4-2 2c1.5 3 3.5 5 6.5 6.5l2-2 4 3c-.8 3-2.5 4.5-5 4.5C9.2 20.3 3.7 14.8 3 8.5 3 6 4.5 3.8 7 3z" />
+                </svg></b><span><strong>Call or WhatsApp</strong><a href="tel:+919876543210">+91 98765 43210</a></span>
+            </li>
           </ul>
         </div>
         <form class="message-card"
           onsubmit="event.preventDefault(); alert('Thank you — your message has been sent.'); this.reset();">
-          <div class="message-card__heading"><span class="message-card__kicker">Quick enquiry</span><h3>Send a message</h3><p>Tell us how we can help.</p></div>
+          <div class="message-card__heading"><span class="message-card__kicker">Quick enquiry</span>
+            <h3>Send a message</h3>
+            <p>Tell us how we can help.</p>
+          </div>
           <div class="field-row"><label>NAME *<input type="text" name="name" placeholder="Your full name"
                 required /></label><label>EMAIL *<input type="email" name="email" placeholder="you@example.com"
                 required /></label></div>
-          <label>PHONE NUMBER<input type="tel" name="phone" inputmode="numeric" placeholder="Your phone number" /></label>
+          <label>PHONE NUMBER<input type="tel" name="phone" inputmode="numeric"
+              placeholder="Your phone number" /></label>
           <label>MESSAGE *<textarea name="message" placeholder="How can we help?" required></textarea></label>
           <button class="button button-pink" type="submit">Send message <span>→</span></button>
-          <p class="message-card__note"><span aria-hidden="true">✓</span> Your details stay private and are only used to respond to your enquiry.</p>
+          <p class="message-card__note"><span aria-hidden="true">✓</span> Your details stay private and are only used to
+            respond to your enquiry.</p>
         </form>
       </div>
     </section>
@@ -295,6 +310,24 @@
       <div class="footer-brand"><img src="assets/logos/ChatGPT Image Sep 19, 2026, 05_06_24 PM.png" alt="Way2Care" />
         <h3>Join the<br><em>Way2Care community.</em></h3>
         <p>A little inspiration for your everyday. New launches, honest guidance and thoughtful care.</p>
+        <div class="footer-social-icons" aria-label="Follow Way2Care">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg
+              aria-hidden="true">
+              <use href="assets/icons/social-icons.svg#instagram"></use>
+            </svg></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg
+              aria-hidden="true">
+              <use href="assets/icons/social-icons.svg#facebook"></use>
+            </svg></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg
+              aria-hidden="true">
+              <use href="assets/icons/social-icons.svg#youtube"></use>
+            </svg></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg
+              aria-hidden="true">
+              <use href="assets/icons/social-icons.svg#linkedin"></use>
+            </svg></a>
+        </div>
         <form onsubmit="event.preventDefault(); this.reset();"><input type="email"
             placeholder="Enter your email address" aria-label="Email address" required><button
             aria-label="Subscribe">→</button></form>
