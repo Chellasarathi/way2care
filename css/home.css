@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 :root {
-  --ink: #172c28;
+  --ink: #12332D;
   --teal: #08bfa7;
   --pink: #ff075f;
   --line: #e7eeee;
@@ -6996,7 +6996,7 @@ body {
 .phase-banner__copy h2 {
   font: 700 clamp(28px, 3.2vw, 42px)/1.06 var(--display);
   letter-spacing: -.045em;
-  color: #172c28;
+  color: #12332D;
   margin: 0 0 18px
 }
 
@@ -9225,7 +9225,7 @@ body {
   font-weight: 700 !important;
   line-height: 1.08 !important;
   letter-spacing: -0.04em !important;
-  color: #172c28 !important;
+  color: #12332D !important;
   margin: 0 0 14px 0 !important;
 }
 
@@ -9395,7 +9395,7 @@ body {
 .category-card--ritual .category-copy strong,
 .category-copy.dark strong,
 .home-v6 .category-copy.dark strong {
-  color: #172c28 !important;
+  color: #12332D !important;
 }
 
 .category-card--ritual .category-copy small,
@@ -11745,7 +11745,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .home-v6 .phase-banner__copy h2 {
   margin: 0 0 12px;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(38px, 3.3vw, 49px)/1.02 var(--display);
   letter-spacing: -0.055em;
 }
@@ -11864,7 +11864,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .home-v6 .confidence h2 {
   margin: 0 0 14px;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(44px, 3.7vw, 56px)/0.92 var(--display);
   letter-spacing: -0.055em;
 }
@@ -12032,7 +12032,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .products-v6 .all-products__heading h2 {
   margin: 0;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(35px, 3vw, 44px)/1 var(--display);
   letter-spacing: -0.045em;
 }
@@ -12104,7 +12104,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .products-v6 .collection-editorial h3 {
   margin: 0 0 16px;
-  color: #172c28;
+  color: #12332D;
   font: 700 25px/1.02 var(--display);
   letter-spacing: -0.035em;
 }
@@ -12182,7 +12182,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .products-v6 .product-belief__heading h2 {
   margin: 0;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(45px, 4.15vw, 66px)/1 var(--display);
   letter-spacing: -0.055em;
 }
@@ -12204,7 +12204,7 @@ body.product-detail-v6 .pdp-main-image img {
   height: 450px;
   margin-inline: -100px;
   position: relative;
-  left: -40px;
+  left: -90px;
   overflow: visible;
   background: transparent;
   box-shadow: none;
@@ -12220,10 +12220,10 @@ body.product-detail-v6 .pdp-main-image img {
 .products-v6 .product-belief__copy {
   align-self: center;
   max-width: 320px;
-  padding-left: 22px;
+  padding-left: 0;
   position: relative;
   top: -48px;
-  left: -70px;
+  left: 0;
   z-index: 2;
 }
 
@@ -12253,7 +12253,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .products-v6 .daily-care-panel__copy h2 {
   margin-bottom: 14px;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(38px, 3.2vw, 48px)/1.02 var(--display);
   letter-spacing: -0.05em;
 }
@@ -12550,7 +12550,7 @@ body.product-detail-v6 .pdp-main-image img {
 .shop-all-v6 .catalogue-hero__copy h1 {
   max-width: 650px;
   margin: 0 0 18px;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(50px, 4.8vw, 72px)/0.94 var(--display);
   letter-spacing: -0.06em;
 }
@@ -12606,7 +12606,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .shop-all-v6 .catalogue__heading h2 {
   margin: 0;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(42px, 4vw, 58px)/1 var(--display);
   letter-spacing: -0.055em;
 }
@@ -12700,7 +12700,7 @@ body.product-detail-v6 .pdp-main-image img {
 .shop-all-v6 .shop-card__body h3 {
   min-height: 0;
   margin: 7px 0 9px;
-  color: #172c28;
+  color: #12332D;
   font-size: 18px;
   line-height: 1.15;
 }
@@ -13429,7 +13429,7 @@ body.product-detail-v6 .pdp-main-image img {
 }
 
 .pairing-infographic__flow h3 {
-  color: #172c28;
+  color: #12332D;
   font-size: 22px;
 }
 
@@ -13588,7 +13588,7 @@ body.product-detail-v6 .pdp-main-image img {
 
 .products-testimonials__heading h2 {
   margin: 0;
-  color: #172c28;
+  color: #12332D;
   font: 700 clamp(40px, 3.8vw, 55px)/0.98 var(--display);
   letter-spacing: -0.055em;
 }
@@ -13699,7 +13699,7 @@ body.product-detail-v6 .pdp-main-image img {
 }
 
 .testimonial-card strong {
-  color: #172c28;
+  color: #12332D;
   font: 700 17px/1.1 var(--display);
 }
 
@@ -15380,7 +15380,7 @@ body.shop-all-v6 .catalogue-hero .catalogue-hero__copy {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-  color: #172c28 !important;
+  color: #12332D !important;
 }
 
 body.shop-all-v6 .catalogue-hero .catalogue-hero__copy h1 {
@@ -15389,7 +15389,7 @@ body.shop-all-v6 .catalogue-hero .catalogue-hero__copy h1 {
   font-weight: 700 !important;
   line-height: 1.04 !important;
   letter-spacing: -0.045em !important;
-  color: #172c28 !important;
+  color: #12332D !important;
   margin: 0 0 16px 0 !important;
 }
 
@@ -16647,7 +16647,7 @@ body.contact-v6 .contact-hero .contact-hero__copy {
   flex-direction: column !important;
   align-items: center !important;
   text-align: center !important;
-  color: #172c28 !important;
+  color: #12332D !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -16674,7 +16674,7 @@ body.contact-v6 .contact-hero .contact-hero__eyebrow {
 body.contact-v6 .contact-hero .contact-hero__copy h1 {
   max-width: 480px !important;
   margin: 0 0 14px 0 !important;
-  color: #172c28 !important;
+  color: #12332D !important;
   font-family: var(--display), 'Playfair Display', Georgia, serif !important;
   font-size: clamp(34px, 4vw, 54px) !important;
   font-weight: 700 !important;
@@ -16760,7 +16760,7 @@ body.about-v6 .about-hero .about-hero__copy h1,
 body.about-v6 .about-hero .inner-hero-copy h1 {
   max-width: 490px !important;
   margin: 0 0 16px 0 !important;
-  color: #172c28 !important;
+  color: #12332D !important;
   font-family: var(--display), 'Playfair Display', Georgia, serif !important;
   font-size: clamp(34px, 4.2vw, 54px) !important;
   font-weight: 700 !important;
@@ -16788,7 +16788,8 @@ body.about-v6 .about-hero .inner-hero-copy p {
 }
 
 body.about-v6 .about-hero .button,
-body.about-v6 .about-hero .button-white {
+body.about-v6 .about-hero .button-white,
+body.combo-v6 .combo-hero .button-white {
   background: #ffffff !important;
   color: #db2354 !important;
   border: none !important;
@@ -16803,7 +16804,8 @@ body.about-v6 .about-hero .button-white {
 }
 
 body.about-v6 .about-hero .button:hover,
-body.about-v6 .about-hero .button-white:hover {
+body.about-v6 .about-hero .button-white:hover,
+body.combo-v6 .combo-hero .button-white:hover {
   transform: translateY(-2px) !important;
   background: #fff5f8 !important;
   color: #be1240 !important;
