@@ -63,7 +63,7 @@
   min-height: clamp(480px, 50vw, 700px);
   display: flex;
   align-items: center;
-  background: url('../assets/images/Warm Minimalist Period Care Moment.png') center/cover no-repeat;
+  background: url('../assets/images/contact-hero-banner.png') center/cover no-repeat;
 }
 
 .contact-hero::before {
@@ -3333,7 +3333,7 @@ p {
 .brand-cta {
   text-align: center;
   padding: 86px 24px;
-  background: #a8e6db url('../assets/images/Pastel Mint Blossom Stationery Banner.png') center/cover no-repeat
+  background: #a8e6db url('../assets/images/pastel-mint-blossom-stationery-banner.png') center/cover no-repeat
 }
 
 .brand-cta .shell>span {
@@ -3448,7 +3448,7 @@ p {
 .contact-hero {
   text-align: center;
   padding: 105px 24px 90px;
-  background: #effbf8 url('../assets/images/Pastel Mint Blossom Stationery Banner.png') center/cover no-repeat
+  background: #effbf8 url('../assets/images/pastel-mint-blossom-stationery-banner.png') center/cover no-repeat
 }
 
 .contact-hero p {
@@ -5729,7 +5729,7 @@ body {
 
 .contact-v6 .contact-hero {
   padding: 95px 24px 78px;
-  background: #dff6ef url('../assets/images/Pastel Mint Blossom Stationery Banner.png') center/cover no-repeat
+  background: #dff6ef url('../assets/images/pastel-mint-blossom-stationery-banner.png') center/cover no-repeat
 }
 
 .contact-v6 .contact-hero h1 {
@@ -6007,23 +6007,27 @@ body {
 }
 
 .why-star--one {
-  left: -17px;
-  top: 46%
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%)
 }
 
 .why-star--two {
-  right: -17px;
-  top: 46%
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%)
 }
 
 .why-star--three {
-  left: 49%;
-  top: -17px
+  top: 0;
+  right: calc(9% + 90px);
+  transform: translate(50%, -50%)
 }
 
 .why-star--four {
-  left: 49%;
-  bottom: -17px
+  left: calc(10% + 90px);
+  bottom: 0;
+  transform: translate(-50%, 50%)
 }
 
 /* DISTINCT PRODUCTS BENEFIT CARDS */
@@ -6181,16 +6185,20 @@ body {
   }
 
   .why-star--one {
-    left: -13px
+    left: 0
   }
 
   .why-star--two {
-    right: -13px
+    right: 0
   }
 
-  .why-star--three,
+  .why-star--three {
+    left: auto;
+    right: calc(9% + 90px)
+  }
+
   .why-star--four {
-    left: 47%
+    left: calc(10% + 90px)
   }
 
   .care-benefits {
@@ -7353,7 +7361,7 @@ body {
 }
 
 .contact-v6 .contact-hero {
-  background: #dcf5ed url('../assets/images/Pastel Mint Blossom Stationery Banner.png') center/cover no-repeat
+  background: #dcf5ed url('../assets/images/pastel-mint-blossom-stationery-banner.png') center/cover no-repeat
 }
 
 .contact-v6 .contact-page {
@@ -15063,7 +15071,7 @@ body.combo-v6 .combo-hero.page-image-hero {
 }
 
 body.contact-v6 .contact-hero {
-  background-image: url('../assets/images/Warm Minimalist Period Care Moment.png') !important;
+  background-image: url('../assets/images/contact-hero-banner.png') !important;
   background-position: center !important;
   background-size: cover !important;
   text-align: left;
