@@ -109,6 +109,23 @@ function initActiveNav() {
   });
 }
 
+/* ---- Floating WhatsApp Button ---- */
+function initFloatingWhatsApp() {
+  if (document.querySelector('.floating-whatsapp')) return;
+
+  const button = document.createElement('a');
+  button.className = 'floating-whatsapp';
+  button.href = `https://wa.me/${WAY2CARE_WHATSAPP_NUMBER}?text=${encodeURIComponent('Hello Way2Care, I would like to know more about your products.')}`;
+  button.target = '_blank';
+  button.rel = 'noopener noreferrer';
+  button.setAttribute('aria-label', 'Chat with Way2Care on WhatsApp');
+  button.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12.04 2a9.84 9.84 0 0 0-8.51 14.77L2 22l5.39-1.42A9.98 9.98 0 1 0 12.04 2Zm0 17.96a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.2.84.86-3.12-.2-.32a8.06 8.06 0 1 1 6.97 3.91Zm4.43-6.04c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.2 7.2 0 0 1-1.34-1.67c-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.79-.2-.47-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.39 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/>
+    </svg>`;
+  document.body.appendChild(button);
+}
+
 /* ---- Reusable Product Detail Page ---- */
 const WAY2CARE_PRODUCTS = {
   'xxl-herbal-pads': {
@@ -869,6 +886,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPdpMotion();
   initReveal();
   initActiveNav();
+  initFloatingWhatsApp();
   initQtyControls();
   initCart();
   initContactForm();

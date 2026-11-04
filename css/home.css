@@ -14930,6 +14930,57 @@ body.product-detail-v6 .pdp-main-image img {
   text-transform: uppercase;
 }
 
+/* Floating WhatsApp contact button shared by all primary pages. */
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 1100;
+  display: inline-flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, .92);
+  border-radius: 50%;
+  color: #fff;
+  background: #25d366;
+  box-shadow: 0 12px 30px rgba(18, 51, 45, .24);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.floating-whatsapp:hover,
+.floating-whatsapp:focus-visible {
+  color: #fff;
+  background: #1fbd5a;
+  box-shadow: 0 16px 34px rgba(18, 51, 45, .3);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.floating-whatsapp svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+body.product-detail-v6 .floating-whatsapp {
+  bottom: 96px;
+}
+
+@media (max-width: 700px) {
+  .floating-whatsapp {
+    right: 16px;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: 54px;
+    height: 54px;
+  }
+
+  body.product-detail-v6 .floating-whatsapp {
+    bottom: 88px;
+  }
+}
+
 @media (max-width: 760px) {
   .header-shop {
     display: none;
