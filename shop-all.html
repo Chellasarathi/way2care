@@ -31,7 +31,7 @@
           us</a><a href="contact.html">Contacts</a></nav>
       <a class="brand brand-centered" href="index.html" aria-label="Way2Care home"><img
           src="assets/logos/way2care-logo.png" alt="Way2Care" /></a>
-      <div class="nav-right-wrap"><a class="header-shop" href="contact.html">Talk to us <span>&rarr;</span></a><button
+      <div class="nav-right-wrap"><a class="header-shop" href="#flow-size-guide" data-flow-guide-open>How to choose your flow pad size <span>&rarr;</span></a><button
           class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu"
           aria-label="Open menu"><span></span><span></span><span></span></button></div>
     </div>
@@ -53,156 +53,523 @@
       </div>
     </section>
 
-    <section class="catalogue" id="care-catalogue" aria-labelledby="catalogue-title">
-      <div class="shell">
+        <section class="catalogue catalogue--fullwidth" id="care-catalogue" aria-labelledby="catalogue-title">
+      <div class="catalogue-shell-full">
         <header class="catalogue__heading" data-reveal>
           <div>
             <h2 id="catalogue-title">All care, <em>in one place.</em></h2>
           </div>
-          <p>Browse the complete Way2Care collection, with clear details to help you understand each format and find the
-            right everyday fit.</p>
+          <p>Browse the menstrual-care collection by product type, then compare size and flow guidance at a glance.</p>
         </header>
 
-        <div class="catalogue-grid" data-product-grid>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-1.png" alt="XXL Premium Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>XXL Premium Herbal Sanitary Pads</h3>
-              <p>Soft, absorbent everyday protection created for confident movement.</p>
-              <div class="commerce-price"><strong>&#8377;280</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xxl-herbal-pads">View details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart data-product-id="xxl-herbal-pads"
-                  data-product-name="XXL Premium Herbal Sanitary Pads" data-product-price="280"
-                  data-product-image="assets/images/product-sanitary-napkin-1.png">Add to cart</button>
+        <div class="menstrual-catalogue" data-product-filter>
+          <!-- Filters Sidebar (like reference design) -->
+          <aside class="filters-sidebar" aria-label="Product filters">
+            <div class="filters-sidebar__top">
+              <h3>Filters</h3>
+              <button type="button" class="filters-reset-btn" data-reset-filters aria-label="Clear all filters">Clear all</button>
+            </div>
+
+            <!-- Collections Filter Accordion -->
+            <div class="filter-group is-open" data-filter-group>
+              <button type="button" class="filter-group__header" aria-expanded="true">
+                <span>Collections</span>
+                <span class="toggle-icon" aria-hidden="true">&minus;</span>
+              </button>
+              <div class="filter-group__content">
+                <ul class="filter-collection-list">
+                  <li>
+                    <button type="button" class="filter-collection-item is-active" data-filter="all" aria-pressed="true">
+                      <span class="filter-label">All Products</span>
+                      <span class="filter-count">(11)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="sanitary-pads" aria-pressed="false">
+                      <span class="filter-label">Sanitary Pads</span>
+                      <span class="filter-count">(08)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="premium" aria-pressed="false">
+                      <span class="filter-label">Herbal Premium Pads</span>
+                      <span class="filter-count">(03)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="ultra-thin" aria-pressed="false">
+                      <span class="filter-label">Herbal Ultra Thin Pads</span>
+                      <span class="filter-count">(03)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="panty-liners" aria-pressed="false">
+                      <span class="filter-label">Herbal Panty Liners</span>
+                      <span class="filter-count">(01)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="cotton-therapy" aria-pressed="false">
+                      <span class="filter-label">Cotton &amp; Therapy</span>
+                      <span class="filter-count">(02)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="sample-pack" aria-pressed="false">
+                      <span class="filter-label">Sample &amp; Trial Packs</span>
+                      <span class="filter-count">(01)</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="filter-collection-item" data-filter="closing-day" aria-pressed="false">
+                      <span class="filter-label">Closing Day Care</span>
+                      <span class="filter-count">(01)</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-2.png" alt="XXXL Premium Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>XXXL Premium Herbal Sanitary Pads</h3>
-              <p>Extra-long protection for heavier-flow days and restful nights.</p>
-              <div class="commerce-price"><strong>&#8377;300</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xxxl-herbal-pads">View details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart data-product-id="xxxl-herbal-pads"
-                  data-product-name="XXXL Premium Herbal Sanitary Pads" data-product-price="300"
-                  data-product-image="assets/images/product-sanitary-napkin-2.png">Add to cart</button></div>
-            </div>
-          </article>
-          <article class="shop-card" data-category="daily" data-product-card>
-            <div class="shop-card__media"><span>Daily care</span><img src="assets/images/product-panty-liners.png"
-                alt="Way2Care Herbal Panty Liners" loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>Herbal Panty Liners</h3>
-              <p>Flexible, fresh-feeling support for everyday routines and light days.</p>
-              <div class="commerce-price"><strong>&#8377;200</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=herbal-panty-liners">View details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart data-product-id="herbal-panty-liners"
-                  data-product-name="Herbal Panty Liners" data-product-price="200"
-                  data-product-image="assets/images/product-panty-liners.png">Add to cart</button>
+
+            <!-- Price Filter Accordion -->
+            <div class="filter-group is-open" data-filter-group>
+              <button type="button" class="filter-group__header" aria-expanded="true">
+                <span>Price</span>
+                <span class="toggle-icon" aria-hidden="true">&minus;</span>
+              </button>
+              <div class="filter-group__content">
+                <div class="price-filter">
+                  <div class="price-filter__labels">
+                    <span class="price-min">&#8377;0</span>
+                    <span class="price-max" data-price-max-label>&#8377;350</span>
+                  </div>
+                  <input type="range" min="150" max="350" step="10" value="350" class="price-range-slider" data-price-slider aria-label="Filter products by maximum price" />
+                </div>
               </div>
             </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-3.png" alt="XL Premium Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>XL Premium Herbal Sanitary Pads</h3>
-              <p>Premium herbal protection for lighter-flow days and reliable everyday comfort.</p>
-              <div class="commerce-price"><strong>&#8377;268</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xl-premium-herbal-pads">View details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart data-product-id="xl-premium-herbal-pads"
-                  data-product-name="XL Premium Herbal Sanitary Pads" data-product-price="268"
-                  data-product-image="assets/images/product-sanitary-napkin-3.png">Add to cart</button>
+
+            <div class="filters-sidebar__note">
+              <span aria-hidden="true">&#10022;</span>
+              <p>All Way2Care herbal sanitary napkins are tested against Indian Standard IS 5405/1980.</p>
+            </div>
+          </aside>
+
+          <!-- Main Catalogue Results -->
+          <div class="menstrual-results">
+            <!-- Results Top Bar -->
+            <div class="catalogue-results__top">
+              <div class="results-count">
+                <p><strong data-product-count>11</strong> products</p>
+              </div>
+              <div class="results-controls">
+                <div class="sort-control">
+                  <div class="custom-select-wrap">
+                    <select id="catalogue-sort" class="catalogue-sort-select" data-sort-select aria-label="Sort products">
+                      <option value="featured">Sort: Featured</option>
+                      <option value="price-asc">Price: Low to High</option>
+                      <option value="price-desc">Price: High to Low</option>
+                      <option value="name-asc">Alphabetical: A to Z</option>
+                    </select>
+                    <span class="select-chevron" aria-hidden="true">&#9662;</span>
+                  </div>
+                </div>
+                <div class="grid-view-switcher" role="radiogroup" aria-label="Product grid layout">
+                  <button type="button" class="view-btn is-active" data-grid-cols="3" aria-pressed="true" title="3 Columns View" aria-label="3 columns grid">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <rect x="2" y="3" width="5" height="18" rx="1.5"></rect>
+                      <rect x="9.5" y="3" width="5" height="18" rx="1.5"></rect>
+                      <rect x="17" y="3" width="5" height="18" rx="1.5"></rect>
+                    </svg>
+                  </button>
+                  <button type="button" class="view-btn" data-grid-cols="4" aria-pressed="false" title="4 Columns View" aria-label="4 columns grid">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <rect x="2" y="3" width="3.5" height="18" rx="1"></rect>
+                      <rect x="7.5" y="3" width="3.5" height="18" rx="1"></rect>
+                      <rect x="13" y="3" width="3.5" height="18" rx="1"></rect>
+                      <rect x="18.5" y="3" width="3.5" height="18" rx="1"></rect>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-4.png" alt="XL Ultra Thin Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>XL Ultra Thin Herbal Sanitary Pads</h3>
-              <p>Slim 280 mm protection for light-to-medium flow with a comfortable dry feel.</p>
-              <div class="commerce-price"><strong>&#8377;220</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xl-ultra-thin-herbal-pads">View
-                  details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart
-                  data-product-id="xl-ultra-thin-herbal-pads" data-product-name="XL Ultra Thin Herbal Sanitary Pads"
-                  data-product-price="220" data-product-image="assets/images/product-sanitary-napkin-4.png">Add to
-                  cart</button></div>
+
+            <!-- Product Grid (01 to 11 in exact requested order) -->
+            <div class="catalogue-grid" data-product-grid>
+              <!-- 01: XL Premium Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xl-premium-herbal-pads" data-price="268" data-order="1" data-name="XL Premium Herbal Sanitary Pads" data-categories="all,sanitary-pads,premium">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge shop-card__badge--bestseller">Bestseller</span>
+                  <a href="product-detail.html?product=xl-premium-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-3.png" alt="XL Premium Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>1L+ Units Sold</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.9</strong> (428)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xl-premium-herbal-pads">XL Premium Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">280 mm · Regular to high flow · Pure herbal protection</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XL (280 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;268</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xl-premium-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xl-premium-herbal-pads" data-product-name="XL Premium Herbal Sanitary Pads" data-product-price="268" data-product-image="assets/images/product-sanitary-napkin-3.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 02: XXL Premium Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xxl-herbal-pads" data-price="280" data-order="2" data-name="XXL Premium Herbal Sanitary Pads" data-categories="all,sanitary-pads,premium">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Customer Favorite</span>
+                  <a href="product-detail.html?product=xxl-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-1.png" alt="XXL Premium Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>50K + Units Sold</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.8</strong> (512)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xxl-herbal-pads">XXL Premium Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">320 mm · High to heavy flow · Soft absorbent coverage</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XXL (320 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;280</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xxl-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xxl-herbal-pads" data-product-name="XXL Premium Herbal Sanitary Pads" data-product-price="280" data-product-image="assets/images/product-sanitary-napkin-1.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 03: XXXL Premium Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xxxl-herbal-pads" data-price="300" data-order="3" data-name="XXXL Premium Herbal Sanitary Pads" data-categories="all,sanitary-pads,premium">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge shop-card__badge--bestseller">Overnight Care</span>
+                  <a href="product-detail.html?product=xxxl-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-2.png" alt="XXXL Premium Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Extra Long 360 mm</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.9</strong> (389)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xxxl-herbal-pads">XXXL Premium Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">360 mm · Heavy flow &amp; overnight · Maximum protection</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XXXL (360 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;300</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xxxl-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xxxl-herbal-pads" data-product-name="XXXL Premium Herbal Sanitary Pads" data-product-price="300" data-product-image="assets/images/product-sanitary-napkin-2.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 04: Herbal Panty Liners -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="herbal-panty-liners" data-price="200" data-order="4" data-name="Herbal Panty Liners" data-categories="all,panty-liners">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Daily Essential</span>
+                  <a href="product-detail.html?product=herbal-panty-liners" class="shop-card__img-link">
+                    <img src="assets/images/product-panty-liners.png" alt="Herbal Panty Liners" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Breathable &amp; Flexible</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.8</strong> (276)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=herbal-panty-liners">Herbal Panty Liners</a>
+                  </h3>
+                  <p class="shop-card__summary">180 mm · Everyday routines &amp; light spotting freshness</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">180 mm</span>
+                    <span class="card-pill">20 Liners</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;200</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=herbal-panty-liners" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="herbal-panty-liners" data-product-name="Herbal Panty Liners" data-product-price="200" data-product-image="assets/images/product-panty-liners.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 05: XL Ultra Thin Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xl-ultra-thin-herbal-pads" data-price="220" data-order="5" data-name="XL Ultra Thin Herbal Sanitary Pads" data-categories="all,sanitary-pads,ultra-thin">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Feathery Soft</span>
+                  <a href="product-detail.html?product=xl-ultra-thin-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-4.png" alt="XL Ultra Thin Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Ultra-Thin Dry Feel</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.7</strong> (194)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xl-ultra-thin-herbal-pads">XL Ultra Thin Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">280 mm · Light to low flow · Slim comfort for active hours</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XL (280 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;220</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xl-ultra-thin-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xl-ultra-thin-herbal-pads" data-product-name="XL Ultra Thin Herbal Sanitary Pads" data-product-price="220" data-product-image="assets/images/product-sanitary-napkin-4.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 06: XXL Ultra Thin Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xxl-ultra-thin-herbal-pads" data-price="240" data-order="6" data-name="XXL Ultra Thin Herbal Sanitary Pads" data-categories="all,sanitary-pads,ultra-thin">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge shop-card__badge--bestseller">Exclusive</span>
+                  <a href="product-detail.html?product=xxl-ultra-thin-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-5.png" alt="XXL Ultra Thin Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Zero Rash Guarantee</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.8</strong> (340)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xxl-ultra-thin-herbal-pads">XXL Ultra Thin Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">320 mm · Low to medium flow · Ultra-thin day &amp; night ease</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XXL (320 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;240</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xxl-ultra-thin-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xxl-ultra-thin-herbal-pads" data-product-name="XXL Ultra Thin Herbal Sanitary Pads" data-product-price="240" data-product-image="assets/images/product-sanitary-napkin-5.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 07: XXXL Ultra Thin Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="xxxl-ultra-thin-herbal-pads" data-price="260" data-order="7" data-name="XXXL Ultra Thin Herbal Sanitary Pads" data-categories="all,sanitary-pads,ultra-thin">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Maximum Coverage</span>
+                  <a href="product-detail.html?product=xxxl-ultra-thin-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-6.png" alt="XXXL Ultra Thin Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>100% Biodegradable</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.9</strong> (218)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=xxxl-ultra-thin-herbal-pads">XXXL Ultra Thin Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">360 mm · Medium to regular flow · Slim overnight comfort</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XXXL (360 mm)</span>
+                    <span class="card-pill">6 Pads</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;260</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=xxxl-ultra-thin-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="xxxl-ultra-thin-herbal-pads" data-product-name="XXXL Ultra Thin Herbal Sanitary Pads" data-product-price="260" data-product-image="assets/images/product-sanitary-napkin-6.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 08: Cotton Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="cotton-pads" data-price="260" data-order="8" data-name="Cotton Pads" data-categories="all,sanitary-pads,cotton-therapy">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Pure Cotton</span>
+                  <a href="product-detail.html?product=cotton-pads" class="shop-card__img-link">
+                    <img src="assets/images/aqua-fabric-pad-cross-section.png" alt="Cotton Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Naturally Breathable</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.7</strong> (156)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=cotton-pads">Cotton Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">Soft, breathable comfort crafted with 100% natural organic cotton</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">Multi-Size</span>
+                    <span class="card-pill">Organic Cotton</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;260</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=cotton-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="cotton-pads" data-product-name="Cotton Pads" data-product-price="260" data-product-image="assets/images/aqua-fabric-pad-cross-section.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 09: Neem Therapy Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="neem-therapy-pads" data-price="275" data-order="9" data-name="Neem Therapy Pads" data-categories="all,sanitary-pads,cotton-therapy">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge shop-card__badge--bestseller">Herbal Infused</span>
+                  <a href="contact.html?product=neem-therapy-pads" class="shop-card__img-link">
+                    <img src="assets/images/herbal-sanitary-napkin-still-life-1.png" alt="Neem Therapy Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Antibacterial Protection</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.8</strong> (182)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="contact.html?product=neem-therapy-pads">Neem Therapy Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">280 mm · Herbal protection with active natural neem extract</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XL (280 mm)</span>
+                    <span class="card-pill">Neem Therapy</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;275</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="contact.html?product=neem-therapy-pads" class="action-details">Ask details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="neem-therapy-pads" data-product-name="Neem Therapy Pads" data-product-price="275" data-product-image="assets/images/herbal-sanitary-napkin-still-life-1.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 10: Herbal Sanitary Pad Sample Pack -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="sanitary-pad-sample-pack" data-price="200" data-order="10" data-name="Herbal Sanitary Pad Sample Pack" data-categories="all,sample-pack">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge">Starter Pack</span>
+                  <a href="product-detail.html?product=sanitary-pad-sample-pack" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-7.png" alt="Herbal Sanitary Pad Sample Pack" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Try All 5 Formats</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.9</strong> (610)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=sanitary-pad-sample-pack">Herbal Sanitary Pad Sample Pack</a>
+                  </h3>
+                  <p class="shop-card__summary">Includes 1 XL, 1 XXL, 1 XXXL, 1 Ultra-Thin &amp; 2 Panty Liners</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">6 Pieces</span>
+                    <span class="card-pill">Trial Box</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;200</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=sanitary-pad-sample-pack" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="sanitary-pad-sample-pack" data-product-name="Herbal Sanitary Pad Sample Pack" data-product-price="200" data-product-image="assets/images/product-sanitary-napkin-7.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 11: Closing Day Herbal Sanitary Pads -->
+              <article class="shop-card shop-card--v2" data-product-card data-product-id="closing-day-herbal-pads" data-price="300" data-order="11" data-name="Closing Day Herbal Sanitary Pads" data-categories="all,sanitary-pads,closing-day">
+                <div class="shop-card__media">
+                  <span class="shop-card__badge shop-card__badge--bestseller">Cycle End Care</span>
+                  <a href="product-detail.html?product=closing-day-herbal-pads" class="shop-card__img-link">
+                    <img src="assets/images/product-sanitary-napkin-8.png" alt="Closing Day Herbal Sanitary Pads" loading="lazy" />
+                  </a>
+                </div>
+                <div class="shop-card__proof-strip">
+                  <span>Ultra-Light Comfort</span>
+                </div>
+                <div class="shop-card__body">
+                  <div class="shop-card__rating">
+                    <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text"><strong>4.8</strong> (145)</span>
+                  </div>
+                  <h3 class="shop-card__title">
+                    <a href="product-detail.html?product=closing-day-herbal-pads">Closing Day Herbal Sanitary Pads</a>
+                  </h3>
+                  <p class="shop-card__summary">280 mm · Ultra-thin protection designed for cycle closing days</p>
+                  <div class="shop-card__pills">
+                    <span class="card-pill is-active">XL (280 mm)</span>
+                    <span class="card-pill">Light Days</span>
+                  </div>
+                  <div class="shop-card__footer">
+                    <div class="commerce-price"><strong>&#8377;300</strong></div>
+                    <div class="shop-card__actions">
+                      <a href="product-detail.html?product=closing-day-herbal-pads" class="action-details">View details <span>&rarr;</span></a>
+                      <button type="button" class="action-add" data-add-to-cart data-product-id="closing-day-herbal-pads" data-product-name="Closing Day Herbal Sanitary Pads" data-product-price="300" data-product-image="assets/images/product-sanitary-napkin-8.png">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-5.png" alt="XXL Ultra Thin Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>XXL Ultra Thin Herbal Sanitary Pads</h3>
-              <p>Ultra-thin 320 mm coverage for confident day and overnight comfort.</p>
-              <div class="commerce-price"><strong>&#8377;240</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xxl-ultra-thin-herbal-pads">View
-                  details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart
-                  data-product-id="xxl-ultra-thin-herbal-pads" data-product-name="XXL Ultra Thin Herbal Sanitary Pads"
-                  data-product-price="240" data-product-image="assets/images/product-sanitary-napkin-5.png">Add to
-                  cart</button></div>
-            </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-6.png" alt="XXXL Ultra Thin Herbal Sanitary Pads"
-                loading="lazy" />
-            </div>
-            <div class="shop-card__body">
-              <h3>XXXL Ultra Thin Herbal Sanitary Pads</h3>
-              <p>Extra-long ultra-thin protection for heavier flow and night-time routines.</p>
-              <div class="commerce-price"><strong>&#8377;260</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=xxxl-ultra-thin-herbal-pads">View
-                  details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart
-                  data-product-id="xxxl-ultra-thin-herbal-pads" data-product-name="XXXL Ultra Thin Herbal Sanitary Pads"
-                  data-product-price="260" data-product-image="assets/images/product-sanitary-napkin-6.png">Add to
-                  cart</button></div>
-            </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-7.png" alt="Herbal Sanitary Pad Sample Pack"
-                loading="lazy" />
-            </div>
-            <div class="shop-card__body">
-              <h3>Herbal Sanitary Pad Sample Pack</h3>
-              <p>A convenient sample pack for exploring Way2Care herbal sanitary pads.</p>
-              <div class="commerce-price"><strong>&#8377;200</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=sanitary-pad-sample-pack">View
-                  details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart
-                  data-product-id="sanitary-pad-sample-pack" data-product-name="Herbal Sanitary Pad Sample Pack"
-                  data-product-price="200" data-product-image="assets/images/product-sanitary-napkin-7.png">Add to
-                  cart</button></div>
-            </div>
-          </article>
-          <article class="shop-card" data-category="period" data-product-card>
-            <div class="shop-card__media"><span>Period care</span><img
-                src="assets/images/product-sanitary-napkin-8.png" alt="Closing Day Herbal Sanitary Pads"
-                loading="lazy" /></div>
-            <div class="shop-card__body">
-              <h3>Closing Day Herbal Sanitary Pads</h3>
-              <p>Light, comfortable protection designed for the closing days of your cycle.</p>
-              <div class="commerce-price"><strong>&#8377;300</strong></div>
-              <div class="shop-card__actions"><a href="product-detail.html?product=closing-day-herbal-pads">View details
-                  <span>&rarr;</span></a><button type="button" data-add-to-cart
-                  data-product-id="closing-day-herbal-pads" data-product-name="Closing Day Herbal Sanitary Pads"
-                  data-product-price="300" data-product-image="assets/images/product-sanitary-napkin-8.png">Add to
-                  cart</button></div>
-            </div>
-          </article>
+            <p class="catalogue-empty" data-filter-empty hidden>No products found matching the selected filter criteria.</p>
+          </div>
         </div>
       </div>
     </section>

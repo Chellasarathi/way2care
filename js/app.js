@@ -1,7 +1,7 @@
 /* WAY2CARE MAIN JAVASCRIPT */
 'use strict';
 
-const WAY2CARE_WHATSAPP_NUMBER = '917598651801';
+const WAY2CARE_WHATSAPP_NUMBER = '919944351536';
 const WAY2CARE_CART_KEY = 'way2care-cart-v1';
 
 /* ---- Announcement Bar ---- */
@@ -127,12 +127,23 @@ function initFloatingWhatsApp() {
 }
 
 /* ---- Reusable Product Detail Page ---- */
+const WAY2CARE_COTTON_DESCRIPTION = 'Pure cotton sanitary napkins are designed to provide softness, comfort, and reliable protection throughout the menstrual cycle. Made with breathable cotton layers, they offer excellent absorbency while helping to keep the skin dry and comfortable. Their hypoallergenic and skin-friendly properties make them ideal for women with sensitive skin, reducing the risk of irritation and rashes. In addition to providing dependable leakage protection, cotton sanitary napkins are biodegradable and environmentally friendly, making them a sustainable choice for everyday menstrual care.';
+const WAY2CARE_PREMIUM_DESCRIPTION = 'Premium Herbal Sanitary Napkins are enriched with natural ingredients such as Aloe Vera, Neem, and Vetiver (Vettiveru), known for their soothing, antibacterial, and refreshing properties. They provide comfort, hygiene, and freshness during menstruation while helping to reduce irritation, odor, and discomfort. Made with breathable cotton layers, these napkins offer excellent absorbency and help keep the skin dry and comfortable. By combining natural herbal extracts with reliable leak protection, they provide a gentle alternative to conventional sanitary pads, supporting confidence, comfort, and well-being during every cycle.';
+const WAY2CARE_ULTRA_THIN_DESCRIPTION = 'Ultra-Thin Herbal Sanitary Napkins are enriched with natural ingredients such as Aloe Vera, Neem, and Vetiver (Vettiveru), known for their soothing, antibacterial, and refreshing properties. They provide comfort, hygiene, and freshness during menstruation while helping to reduce irritation, odor, and discomfort. Made with breathable cotton layers, these napkins offer excellent absorbency and help keep the skin dry and comfortable. By combining natural herbal extracts with reliable leak protection, they provide a gentle alternative to conventional sanitary pads, supporting confidence, comfort, and well-being during every cycle.';
+const WAY2CARE_LINER_DESCRIPTION = 'Pure cotton panty liners are designed to provide softness, comfort, and support for spotting or light leaks throughout everyday routines. Made with breathable cotton layers, they offer absorbency while helping to keep the skin dry and comfortable. Their hypoallergenic and skin-friendly properties make them suitable for sensitive skin. Herbal panty liners are biodegradable and environmentally friendly, making them a thoughtful choice for everyday care. Designed to absorb normal vaginal discharge and light spotting, liners are ideal for pre- and post-period use, everyday freshness, active lifestyles and gym routines. Their breathable design provides all-day comfort while helping keep underwear clean, dry, and fresh.';
 const WAY2CARE_PRODUCTS = {
   'xxl-herbal-pads': {
     name: 'XXL Premium Herbal Sanitary Pads', category: 'Period care', price: 280,
-    description: 'Soft, absorbent everyday protection created for confident movement.',
+    description: `${WAY2CARE_PREMIUM_DESCRIPTION} Designed for regular to high menstrual flow, this XXL (320 mm) size provides high-to-heavy-flow coverage.`,
     hoverImage: 'assets/images/xxl-premium-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-1.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-1.png',
+      'assets/images/xxl-premium-product-detail-2.png',
+      'assets/images/xxl-premium-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xxl-premium-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Comfort-led coverage', 'A practical format for everyday period-care routines.'], ['Made for movement', 'Designed around busy days and changing schedules.'], ['Clear care choices', 'Simple information and direct support before ordering.'], ['Everyday confidence', 'Thoughtful coverage that fits naturally into your routine.']],
     facts: [['Format', 'XXL · 320 mm'], ['Pack', '6 pads'], ['Price', '₹280']],
@@ -140,9 +151,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'xxxl-herbal-pads': {
     name: 'XXXL Premium Herbal Sanitary Pads', category: 'Period care', price: 300,
-    description: 'Extra-long protection for heavier-flow days and restful nights.',
+    description: `${WAY2CARE_PREMIUM_DESCRIPTION} Designed for heavy or overnight menstrual flow, this XXXL (360 mm) size offers extended coverage.`,
     hoverImage: 'assets/images/xxxl-premium-herbal-sanitary-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-2.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-2.png',
+      'assets/images/xxxl-premium-herbal-sanitary-product-detail-2.png',
+      'assets/images/xxxl-premium-herbal-sanitary-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xxxl-premium-herbal-sanitary-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Extra coverage', 'A longer format for routines that call for more coverage.'], ['Day-to-night flexibility', 'Made to support changing period-care moments.'], ['Comfort-focused', 'A thoughtful format designed around everyday ease.'], ['Direct care support', 'Ask questions before ordering through WhatsApp.']],
     facts: [['Format', 'XXXL · 320 mm'], ['Pack', '6 pads'], ['Price', '₹300']],
@@ -150,9 +168,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'herbal-panty-liners': {
     name: 'Herbal Panty Liners', category: 'Daily care', price: 200,
-    description: 'Flexible, fresh-feeling support for everyday routines and light days.',
+    description: WAY2CARE_LINER_DESCRIPTION,
     hoverImage: 'assets/images/panty-liners-product-detail-2.png',
-    images: ['assets/images/product-panty-liners.png'],
+    images: [
+      'assets/images/product-panty-liners.png',
+      'assets/images/panty-liners-product-detail-2.png',
+      'assets/images/panty-liners-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/panty-liners-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Light daily support', 'A compact format for lighter everyday routines.'], ['Routine friendly', 'Easy to include in changing schedules.'], ['Thoughtful comfort', 'Created for flexible, everyday use.'], ['Simple ordering', 'Save the selection and continue through WhatsApp.']],
     facts: [['Format', 'Panty liner'], ['Use', 'Daily care'], ['Price', '₹200']],
@@ -160,9 +185,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'xl-premium-herbal-pads': {
     name: 'XL Premium Herbal Sanitary Pads', category: 'Period care', price: 268,
-    description: 'Premium herbal protection for lighter-flow days and reliable everyday comfort.',
+    description: `${WAY2CARE_PREMIUM_DESCRIPTION} Designed for regular menstrual flow, this XL (280 mm) size offers comfortable everyday protection.`,
     hoverImage: 'assets/images/xl-premium-herbal-sanitary-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-3.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-3.png',
+      'assets/images/xl-premium-herbal-sanitary-product-detail-2.png',
+      'assets/images/xl-premium-herbal-sanitary-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xl-premium-herbal-sanitary-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['280 mm coverage', 'An XL format for lighter-flow and everyday period-care routines.'], ['Premium format', 'A comfort-led pad format for changing schedules.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Easy ordering', 'Save your selection and review it before sending on WhatsApp.']],
     facts: [['Format', 'XL · 280 mm'], ['Pack', '6 pads'], ['Price', '₹268']],
@@ -170,9 +202,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'xl-ultra-thin-herbal-pads': {
     name: 'XL Ultra Thin Herbal Sanitary Pads', category: 'Period care', price: 220,
-    description: 'Slim 280 mm protection for light-to-medium flow with a comfortable dry feel.',
-    hoverImage: 'assets/images/xxl-ultra-thin-product-detail.png',
-    images: ['assets/images/product-sanitary-napkin-4.png'],
+    description: `${WAY2CARE_ULTRA_THIN_DESCRIPTION} Designed for light-to-low menstrual flow, this XL (280 mm) size offers a slim, comfortable fit.`,
+    hoverImage: 'assets/images/xl-ultra-thin-product-detail-2.png',
+    images: [
+      'assets/images/product-sanitary-napkin-4.png',
+      'assets/images/xl-ultra-thin-product-detail-2.png',
+      'assets/images/xl-ultra-thin-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xl-ultra-thin-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Ultra-thin profile', 'A slimmer pad format for an easy everyday routine.'], ['280 mm coverage', 'An XL format for lighter and medium-flow moments.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Direct support', 'Ask the care team any product questions before ordering.']],
     facts: [['Format', 'XL ultra thin · 280 mm'], ['Pack', '6 pads'], ['Price', '₹220']],
@@ -180,9 +219,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'xxl-ultra-thin-herbal-pads': {
     name: 'XXL Ultra Thin Herbal Sanitary Pads', category: 'Period care', price: 240,
-    description: 'Ultra-thin 320 mm coverage for confident day and overnight comfort.',
+    description: `${WAY2CARE_ULTRA_THIN_DESCRIPTION} Designed for low-to-medium menstrual flow, this XXL (320 mm) size offers comfortable, reliable coverage.`,
     hoverImage: 'assets/images/xxl-ultra-thin-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-5.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-5.png',
+      'assets/images/xxl-ultra-thin-product-detail-2.png',
+      'assets/images/xxl-ultra-thin-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xxl-ultra-thin-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Ultra-thin profile', 'A slimmer format designed around everyday ease.'], ['320 mm coverage', 'An XXL format for day and overnight routines.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Saved cart', 'Combine it with other products in one WhatsApp order.']],
     facts: [['Format', 'XXL ultra thin · 320 mm'], ['Pack', '6 pads'], ['Price', '₹240']],
@@ -190,9 +236,16 @@ const WAY2CARE_PRODUCTS = {
   },
   'xxxl-ultra-thin-herbal-pads': {
     name: 'XXXL Ultra Thin Herbal Sanitary Pads', category: 'Period care', price: 260,
-    description: 'Extra-long ultra-thin protection for heavier flow and night-time routines.',
+    description: `${WAY2CARE_ULTRA_THIN_DESCRIPTION} This XXXL (360 mm) size is designed for medium-to-regular menstrual flow and extended coverage.`,
     hoverImage: 'assets/images/xxxl-ultra-thin-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-6.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-6.png',
+      'assets/images/xxxl-ultra-thin-product-detail-2.png',
+      'assets/images/xxxl-ultra-thin-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/xxxl-ultra-thin-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Extra-long format', 'Extended coverage for changing flow and night-time routines.'], ['Ultra-thin profile', 'A slimmer format designed around everyday ease.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Clear confirmation', 'Product availability is confirmed by the team on WhatsApp.']],
     facts: [['Format', 'XXXL ultra thin · 320 mm'], ['Pack', '6 pads'], ['Price', '₹260']],
@@ -202,7 +255,14 @@ const WAY2CARE_PRODUCTS = {
     name: 'Herbal Sanitary Pad Sample Pack', category: 'Period care', price: 200,
     description: 'A convenient sample pack for exploring Way2Care herbal sanitary pads.',
     hoverImage: 'assets/images/sample-pack-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-7.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-7.png',
+      'assets/images/sample-pack-product-detail-2.png',
+      'assets/images/sample-pack-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/sample-pack-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Sample format', 'A simple way to explore the Way2Care sanitary-pad range.'], ['Herbal range', 'Part of the current herbal period-care collection.'], ['Routine friendly', 'A practical introduction to the available formats.'], ['WhatsApp support', 'Confirm the current sample-pack contents before ordering.']],
     facts: [['Format', 'Sample pack'], ['Use', 'Period care'], ['Price', '₹200']],
@@ -212,11 +272,28 @@ const WAY2CARE_PRODUCTS = {
     name: 'Closing Day Herbal Sanitary Pads', category: 'Period care', price: 300,
     description: 'Light, comfortable protection designed for the closing days of your cycle.',
     hoverImage: 'assets/images/closing-day-pad-product-detail-2.png',
-    images: ['assets/images/product-sanitary-napkin-8.png'],
+    images: [
+      'assets/images/product-sanitary-napkin-8.png',
+      'assets/images/closing-day-pad-product-detail-2.png',
+      'assets/images/closing-day-pad-product-detail-3.png',
+      'assets/images/Product_detail-4.png',
+      'assets/images/Product_detail-5.png',
+      'assets/images/closing-day-pad-product-detail-6.png'
+    ],
     storyImage: 'assets/images/pastel-wellness-product-showcase.png',
     benefits: [['Closing-day care', 'A format designed around lighter-flow days near the end of a cycle.'], ['Comfort-led', 'A practical addition to a changing period-care routine.'], ['Herbal range', 'Part of the Way2Care herbal sanitary-pad collection.'], ['Simple ordering', 'Save it with other products and order through WhatsApp.']],
     facts: [['Format', 'Closing day pad'], ['Use', 'Light-flow period care'], ['Price', '₹300']],
     details: [['Product description', 'A herbal sanitary-pad format designed for lighter-flow closing days.'], ['How to use', 'Use according to your personal routine and replace as needed. Follow the directions supplied with the product pack.'], ['Ordering information', 'Review your delivery and product details, then press Send in WhatsApp to submit the order.']]
+  },
+  'cotton-pads': {
+    name: 'Cotton Sanitary Napkins – Ultra Thin', category: 'Period care', price: 260,
+    description: `${WAY2CARE_COTTON_DESCRIPTION} Designed for women experiencing light to heavy menstrual flow, these ultra-thin pads offer comfort, absorbency, and reliable protection throughout the day.`,
+    hoverImage: 'assets/images/aqua-fabric-pad-cross-section.png',
+    images: ['assets/images/aqua-fabric-pad-cross-section.png'],
+    storyImage: 'assets/images/pastel-wellness-product-showcase.png',
+    benefits: [['Soft cotton layers', 'Breathable layers designed for softness and everyday comfort.'], ['Flow options', 'XL, XXL and XXXL formats are described for light, medium and heavy flow.'], ['Sensitive-skin mindful', 'Hypoallergenic and skin-friendly properties, as described for this range.'], ['Thoughtful materials', 'Biodegradable and environmentally friendly product positioning.']],
+    facts: [['Format', 'Ultra-thin cotton sanitary napkin'], ['Sizes', 'XL 280 mm · XXL 320 mm · XXXL 360 mm'], ['Price', 'Price on request']],
+    details: [['Product description', `${WAY2CARE_COTTON_DESCRIPTION} Designed for women experiencing light to heavy menstrual flow, these ultra-thin pads offer comfort, absorbency, and reliable protection throughout the day.`], ['How to use', 'Use according to your personal routine and replace as needed. Follow the directions supplied with the product pack.'], ['Ordering information', 'Contact the Way2Care team to confirm current availability, pack details and price before ordering.']]
   }
 };
 
@@ -319,17 +396,25 @@ function initProductDetail() {
 
   const mainImage = page.querySelector('[data-pdp-main-image]');
   const thumbRoot = page.querySelector('[data-pdp-thumbnails]');
-  const galleryImages = [...new Set([
-    product.images[0],
-    product.hoverImage,
-    ...product.images.slice(1)
-  ].filter(Boolean))].slice(0, 2);
+  const galleryImages = (product.images && product.images.length >= 2)
+    ? product.images
+    : [...new Set([
+        product.images[0],
+        product.hoverImage,
+        ...product.images.slice(1)
+      ].filter(Boolean))];
   let activeImageIndex = 0;
+  const imageBadge = page.querySelector('[data-pdp-image-badge]');
   const chooseImage = (src, index) => {
     activeImageIndex = index;
     mainImage.classList.add('is-changing');
-    setTimeout(() => { mainImage.src = src; mainImage.alt = `${product.name} product view ${index + 1}`; mainImage.classList.remove('is-changing'); }, 120);
+    setTimeout(() => { 
+      mainImage.src = src; 
+      mainImage.alt = `${product.name} product view ${index + 1} of ${galleryImages.length}`; 
+      mainImage.classList.remove('is-changing'); 
+    }, 120);
     thumbRoot.querySelectorAll('button').forEach((button, buttonIndex) => button.classList.toggle('is-active', buttonIndex === index));
+    if (imageBadge) imageBadge.textContent = `${index + 1} / ${galleryImages.length}`;
   };
   thumbRoot.innerHTML = galleryImages.map((src, index) => `<button type="button" class="${index === 0 ? 'is-active' : ''}" aria-label="View image ${index + 1}"><img src="${src}" alt="" loading="lazy"></button>`).join('');
   thumbRoot.querySelectorAll('button').forEach((button, index) => button.addEventListener('click', () => chooseImage(galleryImages[index], index)));
@@ -402,10 +487,17 @@ function initProductDetail() {
     '<svg viewBox="0 0 24 24"><path d="M12 3v4"></path><path d="M12 17v4"></path><path d="M3 12h4"></path><path d="M17 12h4"></path><path d="m5.6 5.6 2.8 2.8"></path><path d="m15.6 15.6 2.8 2.8"></path><path d="m18.4 5.6-2.8 2.8"></path><path d="m8.4 15.6-2.8 2.8"></path><circle cx="12" cy="12" r="3"></circle></svg>'
   ];
   page.querySelector('[data-pdp-benefits]').innerHTML = product.benefits.map((benefit, index) => `<article><span>0${index + 1}</span><i class="pdp-benefit-icon" aria-hidden="true">${benefitIcons[index]}</i><h3>${benefit[0]}</h3><p>${benefit[1]}</p></article>`).join('');
-  page.querySelector('[data-pdp-story-image]').src = product.storyImage;
-  page.querySelector('[data-pdp-story-image]').alt = `${product.name} in a Way2Care setting`;
-  page.querySelector('[data-pdp-facts]').innerHTML = product.facts.map((fact) => `<div><small>${fact[0]}</small><strong>${fact[1]}</strong></div>`).join('');
-  page.querySelector('[data-pdp-accordions]').innerHTML = product.details.map((detail, index) => `<details ${index === 0 ? 'open' : ''}><summary>${detail[0]}<span>+</span></summary><div><p>${detail[1]}</p></div></details>`).join('');
+  const storyImage = page.querySelector('[data-pdp-story-image]');
+  if (storyImage) {
+    storyImage.src = product.storyImage;
+    storyImage.alt = `${product.name} in a Way2Care setting`;
+  }
+  const storyFacts = page.querySelector('[data-pdp-facts]');
+  if (storyFacts) storyFacts.innerHTML = product.facts.map((fact) => `<div><small>${fact[0]}</small><strong>${fact[1]}</strong></div>`).join('');
+  page.querySelector('[data-pdp-accordions]').innerHTML = product.details.map((detail, index) => {
+    const body = detail[0] === 'Product description' ? product.description : detail[1];
+    return `<details ${index === 0 ? 'open' : ''}><summary>${detail[0]}<span>+</span></summary><div><p>${body}</p></div></details>`;
+  }).join('');
 
   const related = Object.entries(WAY2CARE_PRODUCTS).filter(([id]) => id !== productId).slice(0, 3);
   page.querySelector('[data-pdp-related]').innerHTML = related.map(([id, item]) => `<article><a class="pdp-related__image" href="product-detail.html?product=${id}"><img src="${item.images[0]}" alt="${item.name}" loading="lazy"><span>${item.category}</span></a><div><h3><a href="product-detail.html?product=${id}">${item.name}</a></h3><p>${money(item.price)}</p><a href="product-detail.html?product=${id}">View details &rarr;</a></div></article>`).join('');
@@ -576,7 +668,16 @@ function initCart() {
         <button type="button" class="commerce-order__cancel" data-order-cancel>Cancel this order</button>
         <p class="commerce-order__status" data-order-status aria-live="polite"></p>
       </form>
-    </aside>`;
+    </aside>
+    <dialog class="commerce-confirm" data-order-confirm aria-labelledby="commerce-confirm-title" aria-describedby="commerce-confirm-copy">
+      <span class="commerce-confirm__eyebrow">Your Way2Care order</span>
+      <h2 id="commerce-confirm-title">Cancel this order?</h2>
+      <p id="commerce-confirm-copy">Remove all products and cancel this order?</p>
+      <div class="commerce-confirm__actions">
+        <button type="button" class="commerce-confirm__keep" data-confirm-cancel>Keep my order</button>
+        <button type="button" class="commerce-confirm__remove" data-confirm-accept>Remove products</button>
+      </div>
+    </dialog>`;
   document.body.appendChild(cartRoot);
 
   const itemsRoot = cartRoot.querySelector('[data-cart-items]');
@@ -587,6 +688,7 @@ function initCart() {
   const cartView = cartRoot.querySelector('[data-cart-view]');
   const orderForm = cartRoot.querySelector('[data-order-form]');
   const orderStatus = cartRoot.querySelector('[data-order-status]');
+  const orderConfirm = cartRoot.querySelector('[data-order-confirm]');
   const countRoot = cartButton.querySelector('[data-site-cart-count]');
 
   const save = () => localStorage.setItem(WAY2CARE_CART_KEY, JSON.stringify(cart));
@@ -678,8 +780,12 @@ function initCart() {
     render();
   });
 
-  cartRoot.querySelector('[data-order-cancel]').addEventListener('click', () => {
-    if (!window.confirm('Remove all products and cancel this order?')) return;
+  const cancelOrderButton = cartRoot.querySelector('[data-order-cancel]');
+  cancelOrderButton.addEventListener('click', () => orderConfirm.showModal());
+  orderConfirm.querySelector('[data-confirm-cancel]').addEventListener('click', () => orderConfirm.close());
+  orderConfirm.addEventListener('click', (event) => { if (event.target === orderConfirm) orderConfirm.close(); });
+  orderConfirm.querySelector('[data-confirm-accept]').addEventListener('click', () => {
+    orderConfirm.close();
     cart = [];
     orderForm.reset();
     orderStatus.textContent = '';
@@ -714,6 +820,22 @@ function initCart() {
     if (event.key === 'Escape' && cartRoot.classList.contains('is-open')) closeCart();
   });
   render();
+}
+
+/* ---- Home Enquiry Form ---- */
+function initHomeEnquiryForm() {
+  const form = document.querySelector('.message-card');
+  if (!form) return;
+  form.removeAttribute('onsubmit');
+  const status = document.createElement('p');
+  status.className = 'message-card__note home-form-status';
+  status.setAttribute('aria-live', 'polite');
+  form.appendChild(status);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    status.textContent = 'Thank you, your message has been received.';
+    form.reset();
+  });
 }
 
 /* ---- Contact Form ---- */
@@ -768,28 +890,263 @@ function initCatalogueFilters() {
   const buttons = Array.from(toolbar.querySelectorAll('[data-filter]'));
   const count = document.querySelector('[data-product-count]');
   const empty = document.querySelector('[data-filter-empty]');
+  const priceSlider = toolbar.querySelector('[data-price-slider]');
+  const priceMaxLabel = toolbar.querySelector('[data-price-max-label]');
+  const resetBtn = toolbar.querySelector('[data-reset-filters]');
+  const sortSelect = document.querySelector('[data-sort-select]');
+  const gridSwitcherBtns = Array.from(document.querySelectorAll('[data-grid-cols]'));
+  const productGrid = document.querySelector('[data-product-grid]');
+  const filterGroups = Array.from(toolbar.querySelectorAll('[data-filter-group]'));
 
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const selected = button.dataset.filter || 'all';
-      let visible = 0;
+  let currentCategory = 'all';
+  let currentMaxPrice = priceSlider ? Number(priceSlider.value) : 9999;
+  let currentSort = 'featured';
 
-      buttons.forEach((item) => {
-        const active = item === button;
-        item.classList.toggle('is-active', active);
-        item.setAttribute('aria-pressed', String(active));
-      });
-
-      cards.forEach((card) => {
-        const show = selected === 'all' || card.dataset.category === selected;
-        card.hidden = !show;
-        if (show) visible += 1;
-      });
-
-      if (count) count.textContent = String(visible);
-      if (empty) empty.hidden = visible !== 0;
+  // Toggle accordions
+  filterGroups.forEach((group) => {
+    const headerBtn = group.querySelector('.filter-group__header');
+    if (!headerBtn) return;
+    headerBtn.addEventListener('click', () => {
+      const isOpen = group.classList.toggle('is-open');
+      group.classList.toggle('is-collapsed', !isOpen);
+      headerBtn.setAttribute('aria-expanded', String(isOpen));
+      const icon = headerBtn.querySelector('.toggle-icon');
+      if (icon) icon.innerHTML = isOpen ? '&minus;' : '&#43;';
     });
   });
+
+  const cardMatchesCategory = (card, cat) => {
+    if (cat === 'all') return true;
+    const cats = (card.dataset.categories || card.dataset.shopCategory || card.dataset.category || '').split(',').map(c => c.trim());
+    return cats.includes(cat);
+  };
+
+  // Update category counts
+  buttons.forEach((button) => {
+    const category = button.dataset.filter || 'all';
+    const badge = button.querySelector('.filter-count') || button.querySelector('span');
+    if (!badge) return;
+    const catCount = cards.filter((card) => cardMatchesCategory(card, category)).length;
+    const formattedCount = catCount < 10 ? `(0${catCount})` : `(${catCount})`;
+    badge.textContent = formattedCount;
+  });
+
+  // Apply filters and sort
+  const renderCards = () => {
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const price = Number(card.dataset.price || 0);
+      const matchesCat = cardMatchesCategory(card, currentCategory);
+      const matchesPrice = price <= currentMaxPrice;
+      const show = matchesCat && matchesPrice;
+      card.hidden = !show;
+      if (show) visibleCount += 1;
+    });
+
+    if (count) count.textContent = String(visibleCount);
+    if (empty) empty.hidden = visibleCount > 0;
+
+    // Sorting
+    if (productGrid) {
+      const sortedCards = [...cards];
+      if (currentSort === 'price-asc') {
+        sortedCards.sort((a, b) => Number(a.dataset.price || 0) - Number(b.dataset.price || 0));
+      } else if (currentSort === 'price-desc') {
+        sortedCards.sort((a, b) => Number(b.dataset.price || 0) - Number(a.dataset.price || 0));
+      } else if (currentSort === 'name-asc') {
+        sortedCards.sort((a, b) => (a.dataset.name || '').localeCompare(b.dataset.name || ''));
+      } else {
+        // featured: sort by data-order
+        sortedCards.sort((a, b) => Number(a.dataset.order || 0) - Number(b.dataset.order || 0));
+      }
+      sortedCards.forEach((card) => productGrid.appendChild(card));
+    }
+  };
+
+  // Category button clicks
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      currentCategory = button.dataset.filter || 'all';
+      buttons.forEach((b) => {
+        const active = b === button;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+      renderCards();
+    });
+  });
+
+  // Price slider change
+  if (priceSlider) {
+    const updateSlider = () => {
+      currentMaxPrice = Number(priceSlider.value);
+      if (priceMaxLabel) {
+        priceMaxLabel.innerHTML = `&#8377;${currentMaxPrice}`;
+      }
+      renderCards();
+    };
+    priceSlider.addEventListener('input', updateSlider);
+  }
+
+  // Reset filters
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      currentCategory = 'all';
+      buttons.forEach((b) => {
+        const isAll = (b.dataset.filter || 'all') === 'all';
+        b.classList.toggle('is-active', isAll);
+        b.setAttribute('aria-pressed', String(isAll));
+      });
+      if (priceSlider) {
+        priceSlider.value = priceSlider.max;
+        currentMaxPrice = Number(priceSlider.max);
+        if (priceMaxLabel) priceMaxLabel.innerHTML = `&#8377;${currentMaxPrice}`;
+      }
+      if (sortSelect) {
+        sortSelect.value = 'featured';
+        currentSort = 'featured';
+      }
+      renderCards();
+    });
+  }
+
+  // Sort change
+  if (sortSelect) {
+    sortSelect.addEventListener('change', () => {
+      currentSort = sortSelect.value;
+      renderCards();
+    });
+  }
+
+  // Grid view switcher (3 cols vs 4 cols)
+  gridSwitcherBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cols = btn.dataset.gridCols;
+      gridSwitcherBtns.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+      if (productGrid) {
+        productGrid.classList.toggle('grid-cols-4', cols === '4');
+      }
+    });
+  });
+
+  renderCards();
+}
+
+/* ---- Flow and pad-size guide ---- */
+function initFlowSizeGuide() {
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  if (mobileMenu && !mobileMenu.querySelector('[data-flow-guide-open]')) {
+    const mobileTrigger = document.createElement('a');
+    mobileTrigger.href = '#flow-size-guide';
+    mobileTrigger.dataset.flowGuideOpen = '';
+    mobileTrigger.className = 'mobile-menu__guide';
+    mobileTrigger.textContent = 'How to choose your flow pad size →';
+    mobileMenu.appendChild(mobileTrigger);
+  }
+  const triggers = document.querySelectorAll('[data-flow-guide-open]');
+  if (!triggers.length || document.querySelector('[data-flow-guide]')) return;
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'flow-guide';
+  dialog.setAttribute('data-flow-guide', '');
+  dialog.setAttribute('aria-labelledby', 'flow-guide-title');
+  dialog.innerHTML = `
+    <div class="flow-guide__top"><a class="flow-guide__logo" href="index.html" aria-label="Way2Care home"><img src="assets/logos/way2care-logo.png" alt="Way2Care"></a><button class="flow-guide__close" type="button" data-guide-close aria-label="Close size guide">×</button></div>
+    <div class="flow-guide__progress" aria-label="Guide progress"><span class="is-current" data-step-mark="1">1 <b>Your flow</b></span><i></i><span data-step-mark="2">2 <b>Time of use</b></span><i></i><span data-step-mark="3">3 <b>Your match</b></span></div>
+    <section class="flow-guide__step is-active" data-guide-step="1"><p class="flow-guide__eyebrow">Step 1 · Current cycle</p><h2 id="flow-guide-title">How would you describe your flow these days?</h2><p class="flow-guide__sub">Pick what feels right for your current cycle.</p><div class="flow-guide__choices" role="group" aria-label="Choose flow"><button type="button" data-guide-choice="flow" data-value="light"><span aria-hidden="true">💧</span><strong>Light</strong><small>Spotting to light flow</small></button><button type="button" data-guide-choice="flow" data-value="medium"><span aria-hidden="true">💧💧</span><strong>Medium</strong><small>Steady, regular days</small></button><button type="button" data-guide-choice="flow" data-value="heavy"><span aria-hidden="true">💧💧💧</span><strong>Heavy</strong><small>Full, heavier days</small></button></div><div class="flow-guide__actions"><span></span><button type="button" class="flow-guide__next" data-guide-next disabled>Next <span>→</span></button></div></section>
+    <section class="flow-guide__step" data-guide-step="2"><p class="flow-guide__eyebrow">Step 2 · Your routine</p><h2>When do you need this protection?</h2><p class="flow-guide__sub">Day and night can call for different support.</p><div class="flow-guide__choices flow-guide__choices--two" role="group" aria-label="Choose time of use"><button type="button" data-guide-choice="time" data-value="day"><span aria-hidden="true">☀️</span><strong>During the day</strong><small>Everyday comfort and freshness</small></button><button type="button" data-guide-choice="time" data-value="night"><span aria-hidden="true">🌙</span><strong>Overnight</strong><small>Extra coverage and leak protection</small></button></div><div class="flow-guide__actions"><button type="button" class="flow-guide__back" data-guide-back>← Back</button><button type="button" class="flow-guide__next" data-guide-next disabled>Next <span>→</span></button></div></section>
+    <section class="flow-guide__step" data-guide-step="3"><p class="flow-guide__eyebrow">Your Way2Care match</p><h2 data-guide-result-title>Your care match</h2><p class="flow-guide__sub" data-guide-result-copy></p><div class="flow-guide__results" data-guide-results></div><p class="flow-guide__disclaimer">A simple starting point, not medical advice. Flow and comfort vary from person to person.</p><div class="flow-guide__actions"><button type="button" class="flow-guide__back" data-guide-back>← Change answers</button><a class="flow-guide__explore" href="shop-all.html">Explore all products <span>→</span></a></div></section>`;
+  document.body.appendChild(dialog);
+
+  const steps = Array.from(dialog.querySelectorAll('[data-guide-step]'));
+  const marks = Array.from(dialog.querySelectorAll('[data-step-mark]'));
+  const selections = { flow: '', time: '' };
+  const products = {
+    ultraXL: { name: 'XL Herbal Ultra-thin Pads', detail: '280 mm · Light to low flow', category: 'ultra-thin', slug: 'xl-ultra-thin-herbal-pads', image: 'assets/images/product-sanitary-napkin-4.png' },
+    ultraXXL: { name: 'XXL Herbal Ultra-thin Pads', detail: '320 mm · Low to medium flow', category: 'ultra-thin', slug: 'xxl-ultra-thin-herbal-pads', image: 'assets/images/product-sanitary-napkin-5.png' },
+    ultraXXXL: { name: 'XXXL Herbal Ultra-thin Pads', detail: '360 mm · Medium to regular flow', category: 'ultra-thin', slug: 'xxxl-ultra-thin-herbal-pads', image: 'assets/images/product-sanitary-napkin-6.png' },
+    premiumXL: { name: 'XL Herbal Premium Pads', detail: '280 mm · Regular to high flow', category: 'premium', slug: 'xl-premium-herbal-pads', image: 'assets/images/product-sanitary-napkin-3.png' },
+    premiumXXL: { name: 'XXL Herbal Premium Pads', detail: '320 mm · High to heavy flow', category: 'premium', slug: 'xxl-herbal-pads', image: 'assets/images/product-sanitary-napkin-1.png' },
+    premiumXXXL: { name: 'XXXL Herbal Premium Pads', detail: '360 mm · Heavy flow and overnight', category: 'premium', slug: 'xxxl-herbal-pads', image: 'assets/images/product-sanitary-napkin-2.png' },
+    cottonXL: { name: 'XL Cotton Pads', detail: '280 mm · Light flow', category: 'cotton', contact: 'cotton-pads', image: 'assets/images/aqua-fabric-pad-cross-section.png' },
+    cottonXXL: { name: 'XXL Cotton Pads', detail: '320 mm · Medium flow', category: 'cotton', contact: 'cotton-pads', image: 'assets/images/aqua-fabric-pad-cross-section.png' },
+    cottonXXXL: { name: 'XXXL Cotton Pads', detail: '360 mm · Heavy flow', category: 'cotton', contact: 'cotton-pads', image: 'assets/images/aqua-fabric-pad-cross-section.png' },
+    closing: { name: 'Closing Day Pads', detail: 'XL 280 mm · Ultra-thin protection', category: 'closing-day', slug: 'closing-day-herbal-pads', image: 'assets/images/product-sanitary-napkin-8.png' },
+    neem: { name: 'Neem Therapy Pads', detail: 'XL 280 mm · Ultra-thin herbal pad', category: 'neem', contact: 'neem-therapy-pads', image: 'assets/images/product-sanitary-napkin-3.png' },
+    liners: { name: 'Herbal Panty Liners', detail: '180 mm · Light daily freshness', category: 'panty-liners', slug: 'herbal-panty-liners', image: 'assets/images/product-panty-liners.png' },
+    sample: { name: 'Herbal Sanitary Pad Sample Pack', detail: 'A mix of four pad sizes plus two panty liners', category: 'sample-pack', slug: 'sanitary-pad-sample-pack', image: 'assets/images/product-sanitary-napkin-7.png' }
+  };
+
+  const recommendationMap = {
+    'light-day': ['ultraXL', 'cottonXL', 'closing', 'neem', 'liners'],
+    'light-night': ['premiumXL', 'ultraXXL', 'cottonXXL'],
+    'medium-day': ['ultraXXL', 'premiumXL', 'cottonXXL', 'liners'],
+    'medium-night': ['premiumXXL', 'ultraXXXL', 'closing'],
+    'heavy-day': ['premiumXXL', 'premiumXXXL', 'cottonXXXL'],
+    'heavy-night': ['premiumXXXL', 'premiumXXL', 'sample']
+  };
+
+  const goToStep = (stepNo) => {
+    steps.forEach((step) => step.classList.toggle('is-active', Number(step.dataset.guideStep) === stepNo));
+    marks.forEach((mark) => {
+      const n = Number(mark.dataset.stepMark);
+      mark.classList.toggle('is-current', n === stepNo);
+      mark.classList.toggle('is-complete', n < stepNo);
+    });
+  };
+
+  const renderResults = () => {
+    const key = `${selections.flow}-${selections.time}`;
+    const chosen = (recommendationMap[key] || []).slice(0, 3).map((id) => products[id]).filter(Boolean);
+    const lead = chosen[0];
+    dialog.querySelector('[data-guide-result-title]').textContent = `${selections.flow[0].toUpperCase()}${selections.flow.slice(1)} flow · ${selections.time === 'night' ? 'overnight' : 'daytime'} care`;
+    dialog.querySelector('[data-guide-result-copy]').textContent = `Based on your answers, start with ${lead.name}. Here are a few related options from the 11-product collection.`;
+    const results = dialog.querySelector('[data-guide-results]');
+    let allProductsLink = dialog.querySelector('[data-guide-all-products]');
+    if (!allProductsLink) {
+      allProductsLink = document.createElement('a');
+      allProductsLink.className = 'flow-guide__all-products';
+      allProductsLink.href = 'shop-all.html';
+      allProductsLink.dataset.guideAllProducts = '';
+      allProductsLink.textContent = 'View all products →';
+      results.before(allProductsLink);
+    }
+    results.innerHTML = chosen.map((product, index) => {
+      const href = product.slug ? `product-detail.html?product=${product.slug}` : `contact.html?product=${product.contact}`;
+      return `<article class="flow-guide__product ${index === 0 ? 'is-recommended' : ''}"><img class="flow-guide__product-image" src="${product.image}" alt="${product.name}" loading="lazy"><div class="flow-guide__product-copy"><span class="flow-guide__product-tag">${index === 0 ? 'Recommended size' : 'Also explore'}</span><h3>${product.name}</h3><p>${product.detail}</p><a href="${href}">${product.slug ? 'View details' : 'Ask about availability'} <span>→</span></a></div></article>`;
+    }).join('');
+  };
+
+  triggers.forEach((trigger) => trigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    dialog.showModal();
+    goToStep(1);
+  }));
+  dialog.querySelector('[data-guide-close]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => {
+    selections.flow = ''; selections.time = '';
+    dialog.querySelectorAll('[data-guide-choice]').forEach((button) => button.classList.remove('is-selected'));
+    dialog.querySelectorAll('[data-guide-next]').forEach((button) => { button.disabled = true; });
+    goToStep(1);
+  });
+  dialog.querySelectorAll('[data-guide-choice]').forEach((button) => button.addEventListener('click', () => {
+    const group = button.dataset.guideChoice;
+    selections[group] = button.dataset.value;
+    dialog.querySelectorAll(`[data-guide-choice="${group}"]`).forEach((item) => item.classList.toggle('is-selected', item === button));
+    const next = button.closest('[data-guide-step]').querySelector('[data-guide-next]');
+    if (next) next.disabled = false;
+  }));
+  dialog.querySelectorAll('[data-guide-next]').forEach((button) => button.addEventListener('click', () => {
+    const step = Number(button.closest('[data-guide-step]').dataset.guideStep);
+    if (step === 1 && selections.flow) goToStep(2);
+    else if (step === 2 && selections.time) { renderResults(); goToStep(3); }
+  }));
+  dialog.querySelectorAll('[data-guide-back]').forEach((button) => button.addEventListener('click', () => goToStep(Number(button.closest('[data-guide-step]').dataset.guideStep) - 1)));
 }
 
 /* ---- Products Testimonials Carousel ---- */
@@ -877,6 +1234,8 @@ function initTestimonialCarousel() {
 
 /* ---- Init All ---- */
 document.addEventListener('DOMContentLoaded', () => {
+  initCatalogueFilters();
+  initFlowSizeGuide();
   initAnnouncement();
   initHeader();
   initMobileMenu();
@@ -889,7 +1248,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingWhatsApp();
   initQtyControls();
   initCart();
+  initHomeEnquiryForm();
   initContactForm();
-  initCatalogueFilters();
   initTestimonialCarousel();
 });
