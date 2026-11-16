@@ -808,6 +808,7 @@ video {
   body.shop-all-v6 .catalogue-hero .button,
   body.shop-all-v6 .catalogue-hero__copy>a,
   body.products-v6 .products-hero p,
+  body.products-v6 .products-hero .button,
   body.combo-v6 .combo-hero p,
   body.combo-v6 .combo-hero .button,
   body.combo-v6 .combo-hero__copy>a,
@@ -2236,5 +2237,124 @@ body.home-v6 .message-card__note>span {
     padding: 0 28px !important;
     font-size: 12px !important;
     letter-spacing: .08em !important;
+  }
+}
+
+/* ==========================================================================
+   Way2Care Purpose: Vision & Mission (Mobile Responsiveness)
+   ========================================================================== */
+@media (max-width: 768px) {
+  body.about-v6 .about-profile,
+  .about-v6 .about-profile {
+    margin: 12px 10px 20px !important;
+    padding: 36px 18px 40px !important;
+    border-radius: 20px !important;
+  }
+
+  body.about-v6 .about-profile__grid,
+  .about-v6 .about-profile__grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  body.about-v6 .about-profile__heading,
+  .about-v6 .about-profile__heading {
+    margin: 0 auto 28px !important;
+    padding: 0 4px !important;
+  }
+
+  body.about-v6 .about-profile__heading h2,
+  .about-v6 .about-profile__heading h2 {
+    font-size: clamp(26px, 7.5vw, 34px) !important;
+    line-height: 1.12 !important;
+  }
+
+  body.about-v6 .about-profile__heading p,
+  .about-v6 .about-profile__heading p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Single Column Stack on Mobile */
+  body.about-v6 .about-profile__side,
+  .about-v6 .about-profile__side {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  body.about-v6 .about-profile__vision,
+  body.about-v6 .about-profile__mission,
+  .about-v6 .about-profile__vision,
+  .about-v6 .about-profile__mission {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 26px 20px 24px !important;
+    border-radius: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  body.about-v6 .about-profile__side h3,
+  .about-v6 .about-profile__side h3 {
+    font-size: 24px !important;
+    margin: 0 0 12px !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  body.about-v6 .about-profile__side p,
+  .about-v6 .about-profile__side p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    margin: 0 0 18px !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    hyphens: manual !important;
+  }
+
+  body.about-v6 .about-profile__quote,
+  .about-v6 .about-profile__quote {
+    padding: 12px 16px !important;
+    border-radius: 12px !important;
+  }
+
+  body.about-v6 .about-profile__quote span,
+  body.about-v6 .about-profile__quote strong,
+  .about-v6 .about-profile__quote span,
+  .about-v6 .about-profile__quote strong {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body.about-v6 .about-profile,
+  .about-v6 .about-profile {
+    margin: 10px 8px 18px !important;
+    padding: 30px 14px 34px !important;
+  }
+
+  body.about-v6 .about-profile__vision,
+  body.about-v6 .about-profile__mission,
+  .about-v6 .about-profile__vision,
+  .about-v6 .about-profile__mission {
+    padding: 22px 16px 20px !important;
+  }
+
+  body.about-v6 .about-profile__side h3,
+  .about-v6 .about-profile__side h3 {
+    font-size: 22px !important;
+  }
+
+  body.about-v6 .about-profile__side p,
+  .about-v6 .about-profile__side p {
+    font-size: 13.5px !important;
   }
 }
